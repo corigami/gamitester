@@ -12,12 +12,6 @@
     android:focusable="false"
     android:text="@string/homeScreenText1"/>
 
-    <EditText
-        android:id="@+id/edit_message"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:hint="@string/edit_message" />
-
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
