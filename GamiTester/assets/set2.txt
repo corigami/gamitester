@@ -1,0 +1,1237 @@
+1. (001)Each avionics intermediate shop test station has how many common bays?
+
+a. One.*
+b. Two.
+c. Three.
+d. Four.
+
+2. (001)In the reference designator lAlA4A7Q5 what part identifies the tester replaceable unit 
+number within the bay and rack?
+
+a. Al.
+b. A4.*
+c. A7.
+d. Q5.
+
+3. (002)What provides basic overload protection for 50/60 Hz and 400 Hz power?
+
+a. CB1 and CB2.*
+b. CB2 and CB3.
+c. CB3 and CB4.
+d. CB4 and CB5.
+
+4. (003)What is the programmable output voltage range of the 3-phase regulator in switching 
+unit measurement stimulus subsystem?
+
+a. 103.5 to 126.5 voltage root-mean-square (VRMS).*
+b. 99.5 to 103.5 voltage direct current (VDC).
+c. 0 to 30 voltage root-mean-square (VRMS).
+d. 0 to 30 voltage direct current (VDC).
+
+5. (004)What fan is used in bays UIA2 and U2A1?
+
+a. Vane.
+b. Clutched.
+c. Centrifugal.
+d. Squirrel cage.*
+
+6. (004)What fan is used in the switching unit measurement stimulus subsystem cooling 
+management?
+
+a. Vane.
+b. Clutched.
+c. Centrifugal*
+d. Squirrel cage.
+
+7. (005)The three test station processes that are controlled by the computer subsystem when
+ testing units under test are
+
+a. stimulus, response, and switching.
+b. stimulus, measurement, and switching.*
+c. response, switching, and cooling air.
+d. response, measurement, and cooling air.
+
+8. (006)What is the total storage capacity of one 7907 disc drive with two 8-inch discs 
+installed?
+
+a. 10 megabytes.
+b. 20 megabytes.
+c. 41 megabytes.*
+d. 81 megabytes.
+
+9. (006)How many spare tracks are on each disk surface?
+
+a. 16.*
+b. 64.
+c. 628.
+d. 643.
+
+10. (007)In what form is data transmitted and received by the terminal on the F-16 test station?
+
+a. ASCII*
+b. IEEE-488.
+c. ANCI serial.
+d. RS232C parallel.
+
+11. (007)What station control panel switch causes the program to halt until directed to 
+continue by the technician?
+
+a. GO.
+b. STOP.*
+c. NOGO.
+d. STATION RESET.
+
+12. (007)At what baud rate does the computer transfer data to the station control panel circuit 
+card assembly?
+
+a. 1,200.
+b. 2,400.
+c. 4,800.
+d. 9,600.*
+
+13. (008)The power requirement for the switching unit measurement and stimulus subsystem 
+direct current power supply is
+
+a. single-phase 50/60 Hz.
+b. single-phase 400 Hz.
+c. hase 50/60 Hz.*
+d. 3-phase 400 Hz.
+
+14. (009)The four circuit card assembly groups in the switching unit measurement and 
+stimulus subsystem that implement the actual core stimulus functions are core 
+stimulus, synchro/resolver test, digital interface unit, and
+
+a. test bus switching.
+b. feed-thru interface.
+c. switching interface.
+d. LRU power distrubtion*
+
+15. (010)The four circuit card assembly groups in the switching unit measurement and 
+stimulus subsystem that implement the core measurement functions are the 
+measurement stimulus subsystem, analog interface unit, digital interface unit, and the
+
+a. test bus control interface.
+b. core switching interface.
+c. synchro/resolver test.*
+d. control system.
+
+16. (010)The analog interface unit circuit card assembly group on the core measurement 
+subsystem contains the high frequency measurement, low frequency measurement, 
+and the
+
+a. input buffer CCAs.*
+b. A/D converter CCAs.
+c. parallel digital CCAs.
+d. trigger selector CCAs.
+
+17. (010)What circuit card assembly (CCA) contains differential line receivers that are loaded
+ with data from the unit under test for transmission to the computer for processing?
+
+a. Input buffer.
+b. Serial data bus.
+c. Parallel digital.*
+d. Low frequency measurement.
+
+18. (011)The individual switching circuits in the avionics intermediate shop test station are 
+selected by
+
+a. using only a resource code.
+b. programming individual relays.
+c. using resource codes in the "CNX" field of a statement.*
+d. using individual relay numbers in the "RELAY" field of a statement.
+
+19. (011)Which circuit card assembly contains relays for power supply switching?
+
+a. Feed-through interface.
+b. Coax switching interface.
+c. Power switching module/sense.*
+d. General purpose switch (1A).
+
+20. (012)The programmable processor controller consists of a memory circuit card assembly 
+a sequencer circuit card assembly, and the
+
+a. counter/timmer circuit card assembly (CCA).
+b. inertial navigation unit (INU) circuit card assembly (CCA).
+c. switching unit measurement stimulus subsystem (SUMMS) monitor circuit 
+card assembly (CCA).
+d. programmable processor controller (PPQ timing/compare (TICOM) circuit
+ card assembly (CCA).*
+
+21. (013)What are the operations called that any computer can perform without a program
+
+a. Assembly language.
+b. Instruction set.*
+c. Subroutine.
+d. BASIC.
+
+22. (013)A program in a "ones-and-zeros" format is written in
+
+a. ATLAS language.
+b. BASIC language.
+c. Machine language.*
+d. assembly language.
+
+23. (014)Software that must be used only by programmers who have intimate knowledge of the test station hardware, control systems, and software systems best defines the
+ Abbreviated Test Language for All Systems (ATLAS)
+
+a. protocols.
+b. program structure.
+c. system procedures.*
+d. nontest statements.
+
+24. (014)What is always the first section of an Abbreviated Test Language for All Systems
+ (ATLAS) program?
+
+a. System procedure.
+b. Program structure.
+c. Preamble structure.*
+d. Procedural structure.
+
+25. (014)You can distinguish the unlimited looping capability in an Abbreviated Test 
+Language for All Systems (ATLAS) syntax diagram on the bypass line the by the
+
+a. dot.
+b. dashed line.
+c. lack of a dot.*
+d. ontinuous line.
+
+26. (014)Which Abbreviated Test Language for All Systems (ATLAS) characters, when placed in the flag field, is used as a comment only?
+
+a. C only.*
+b. B and E only.
+c. C and E only.
+d. Blank space only.
+
+27. (014)What field of an Abbreviated Test Language for All Systems (ATLAS) statement 
+specifies in great detail exactly what is applied or how the timing of a signal is set up?
+
+a. Noun.
+b. verb.
+c. Variable.*
+d. Evaluation.
+
+28. (015)What type of Abbreviated Test Language for All Systems (ATLAS) statement does not 
+require the use of the rest of the test station to properly execute?
+
+a. Test.
+b. Non-test.*
+c. Protocol.
+d. Procedural.
+
+29. (015)Which type of non-test Abbreviated Test Language for All Systems (ATLAS) statement 
+alters the normal sequence of program flow?
+
+a. Data declaration.
+b. Calculate/compare.
+c. Input/output/delay.
+d. Decision/branching.*
+
+30. (015)Which Abbreviated Test Language for All Systems (ATLAS) test statements generate
+a signal that can have more states than just "ON" or "OFF"?
+
+a. Analog measurement.
+b. Analog stimulus.*
+c. Digital testing.
+d. Protocols.
+
+31. (016)The avionics intermediate shop software system assigns a set of default values at 
+system bootstrap. Which one of these is the default value for a "WAIT FOX'?
+
+a. Thermal printer.
+b. Disc logic unit 1.
+c. Cathode-ray tube (CRT).*
+d. Station control panel (SCP) indicators.
+
+32. (017)The test executive interprets and executes what avionics intermediate shop software 
+system code?
+
+a. Source only.
+b. Interpretive only.*
+c. Source and assembly.
+d. source and interpretive.
+
+33. (017)How many options are permitted for any given program in the system reserved file 
+"ATLASDEBUG"?
+
+a. 2.
+b. 5.
+c. 10.*
+d. 22.
+
+34. (018)The change analysis functional mode provides an
+
+a. automatic system merge.
+b. automatic comparison of two ATLAS programs.*
+c. option for the operator to change a statement
+d. option for the operator to change a character string.
+
+35. (019)When a nonexistent statement number is entered in the Abbreviated Test Language 
+for All Systems (ATLAS) text editor mode's command, it
+
+a. defaults to the next lower existing statement number.
+b. defaults to the next higher existing statement number.
+c. displays an error message on the CRT and the command is ignored.*
+d. system defaults to the previous statement edit and the command is ignored.
+
+36. (019)Which Abbreviated Test Language for All Systems (ATLAS) text editor command 
+searches for a specific character in a statement?
+
+a. NEXT OCCUR.
+b. NEW FIELD.*
+c. COPY EOL.
+d. RUBOUT.
+
+37. (020)In the file manager's ASSIGN statement, the "LO" command
+
+a. files the output device.
+b. processes the output device.
+c. defines the list output device.*
+d. identifies the logic output device.
+
+38. (021)On the avionics intermediate shop test station, self-test software consists of how 
+many elements?
+
+a. 1.
+b. 2.
+c. 3.
+d. 4.*
+
+39. (021)Which program is not considered a utility program?
+
+a. 'FIND ALIGN'.
+b. 'CALS','MODS'.
+c. 'RESOURCE XREF'.
+d. 'FOR-TBEN'.*
+
+40. (022)The avionics intermediate shop electronically programmable read-only memory 
+programmer/verifier interface adapter is compatible with which test station?
+
+a. Computer/inertial and display/indicators only.
+b. Display/indicators and processors/pneumatic only.
+c. Display/indicators, processors/pneumatic and radio frequency only.
+d. Computer/inertial, display/indicators, processors/pneumatic and radio frequency.*
+
+41. (022)What avionics intermediate shop electronically programmable read-only memory 
+programmer/verifier interface test adapter circuit card assembly contains the
+ necessary address and data bus multiplexing/demultiplexing circuitry as well as the 
+components to decode the status lines from the central processing unit?
+
+a. Analog.
+b. Memory.
+c. Pulse driver.
+d. Microprocessor*
+
+42. (023)The line replaceable unit air cooler assembly is capable of supplying up to
+
+a. 15 ppm of air, at temperatures below 56 T.
+b. 15 ppm of air, at temperatures below 66 T.*
+c. 25ppm of air, at temperatures below 56 T.
+d. 25 ppm of air, at temperatures below 66 T.
+
+43. (024)Which computer inertial (C/I) peculiar switching unit measurement stimulus 
+subsystem (SUMSS) circuit card assembly (CCA) provides alternating current (AC) or
+ (DC) stimulus using a times 0. 1 scaling amplifier to the unit under test (UUT)?
+
+a. Digital-to-analog converter (DAC) interface.
+b. Digital-to-analog converter (DAC) reference source.
+c. 1OOV precision digital-to-analog converter (PRE DAC).*
+d. 1OV precision digital-to-analog converter (PRE DAC).
+
+44. (024)Which computer inertial (C/I) peculiar switching unit measurement stimulus 
+subsystem (SUMSS) circuit card assembly (CCA) provides an alternating current (AC) or direct current (DC) stimulus with one to one scaling to the unit under test (UUT)?
+
+a. Digital-to-analog converter (DAC) interface.
+b. 1OV precision digital-to-analog converter (PRE DAC).*
+c. 1OOV precision digital-to-analog converter (PRE DAC).
+d. Digital-to-analog converter (DAC) reference source.
+
+45. (025)Which computer inertial (C/I) peculiar SUMS S circuit card assembly (CCA) provides 
+timing and control signals, and operates under the control of TBI- I?
+
+a. Inertial navigation unit/fire control computer (INU/FCC) controller.*
+b. Expanded fire control computer (EFCC) interface.
+c. 1553 serial data board (SDB).
+d. INU/FCC interface.
+
+46. (025)Which test bus interface JBI) controls the operation of the inertial navigation unit/fire
+ control computer (INU/FCC) interface circuit card assembly (CCA)?
+
+a. TBI-1.*
+b. TBI-2.
+c. TBI-6.
+d. TBI-7.
+
+47. (025)Which inertial navigation unit/fire control computer (INU/FCC) controller circuit card 
+assembly (CCA) registers are used to simulate unit under test (UUT) inputs and to 
+monitor the results of a sequential operational mode?
+
+a. Mode.
+b. Status.
+c. Address.
+d. Self-test.*
+
+48. (026)Which computer inertial (C/I) peculiar switching unit measurement stimulus 
+subsystem (SUMSS) circuit card assemblies (CCAs) provides interface for data, 
+address, timing and control signals, and operates under the control of TBI-6?
+
+a. Inertial navigation (INU/FCC) controller.
+b. Expanded fire control computer (EFCC) interface.*
+c. 1553 serial data board (SDB).
+d. INU/FCC interface.
+
+49. (026)Which test bus interface (TBI) controls the operation of the processor controller 
+subsystem #2 circuit card assemblies (CCAs)?
+
+a. TBI-1.
+b. TBI-2.
+c. TBI--6.*
+d. TBI-7.
+
+50. (026)Which computer inertial (C/I) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) acts as an 1/0 port for transformercoupled Manchester biphase or transistor-transistor logic (TTL) differential data during data entry display (DED) and data entry electronics unit (DEEU) testing?
+
+a. Inertial navigation unit/fire control computer (INU/FCC) interface.
+b. Expanded fire control computer (EFCC) interface.
+c. Special equipment controller.
+d. 1553 serial data boards.*
+
+51. (027)Which verb is used to initiate the RUN protocol when testing the expanded fire control computer (EFCC)?
+
+a. DO.*
+b. RUN.
+c. EXECUTE.
+d. START.
+
+52. (027)Which computer inertial (C/I) peculiar protocol simulates the expanded fire control computer (EFCC) control console by sending or receiving data addressed to that interface during testing.
+
+a. INSERT.
+b. LOAD MEMORY.
+c. READ MEMORY.
+d. PROGRAMMED I/0.*
+
+53. (027)Which protocol applies both dynamic and static stimulus to all signal paths of the switching unit measurement stimulus subsystem (SUMSS) N9 row?
+
+a. INSERT.
+b. ITA TEST.*
+c. LOAD EEPROM.
+d. ERASE EEPROM.
+
+54. (028)Which display indicator (D/I) test system duplicates the major functions of the radar electro optical electronics unit (REO EU) and the radar electro optical interface unit (REO IU) line replaceable units (LRUs)?
+
+a. Symbology/cursive signal test.
+b. Flight information indicator test.
+c. Television raster video signal test.*
+d. Cathode-ray tube (CRT) video display quality test.
+
+55. (028))Which display indicator (D/I) test subsystem is used to test the heads-up display (HUD) boresight tool?
+
+a. Photometric assembly.*
+b. Video display assembly.
+c. Raster display assembly.
+d. Precision current source panel (PCSP).
+
+56. (028)VvThich photometric assembly component is used to measure cathode-ray tube (CRT) beamradiation and sends its output to the photometric stimulus interface circuit card assembly (CCA)?
+
+a. Photodetector.
+b. Digital radiometer.*
+c. Spectral irradiance head.
+d. Lamp monitor and control.
+
+57. (028)Which photometric assembly component provides stimulus for the mutlifunction display's (NIFD's) ambient light sensors?
+
+a. Theodolite.
+b. Photodetector.
+c. Digital radiometer.
+d. Calibrated light source.*
+
+58. (028)Which test bus interface (TBI) controls the operation of the precision current source panel (PCSP) in the D/I test station?
+
+a. TBI 1.
+b. TBI 2
+c. TBI 6.
+d. TBI 7.*
+
+59. (029)Which display/indicator (D/I) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) operates in only two modes and addresses and interfaces the control system to itself?
+
+a. Heads-up display/universal asynchronous receiver/transmitter circuit card assembly (UART CCA).
+b. Data transfer (DT) heads-up display electronics unit (HUD ELD memory CCA.*
+c. Discrete input/output (I/0) CCA
+d. Controller interface CCA.
+
+60. (029)Which display/indicator (D/I) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) transfers analog and digital signals through SUMMSconnector J 101 and J 102 respectively?
+
+a. Photometric stimulus interface CCA.*
+b. Stimulus I feed-thru CCA.
+c. Controller interface CCA.
+d. Discrete 1/0 CCA
+
+61. (029)Which display/indicator (D/I) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) simulates heads-up display (HUD) deflection yokes?
+
+a. Load module CCA.*
+b. Cursive measurement CCA.
+c. Summing and integrator CCA.
+d. HUD universal asynchronous receiver/transmitter (UART) CCA.
+
+62. (029)Which display/indicator D/I peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) is used to test the serial data bus of the multifunction display (NED) system?
+
+a. heads-up display (HUD) universal asynchronous receiver/transmitter (UART) CCA.*
+b. Cursive measurement CCA.
+c. Display controller CCA.
+d. Loss interface CCA.
+
+63. (029)Which display/indicator (D/I) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) provides separate vertical and horizontal sync signals that can be programmed for delay or pulse width?
+
+a. Line-of-sight seeker (LOSS) interface CCA.
+b. Display controller CCA.
+c. Raster video A CCA.
+d. Raster video B CCA.*
+
+64. (029)Which display/indicator (D/1) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assemblies (CCAs) provide video (bright-up) signals and X-Y symbol deflection signals during wide-angle conventional (WAC) heads-up display (HUD) display unit (DU) testing?
+
+a. HUD universal asynchronous receiver/transmitter (UART) CCA.
+b. Line-of-sight seeker (LOSS) CCA.
+c. Raster video generator B CCA.
+d. Display controller CCA.*
+
+65. (029)VY'hich display/indicator (D/1) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) generates two sinusoidal waveforms of variable phase, frequency, and amplitude to test the wide-angle conventional electronics unit (WAC EU)?
+
+a. Heads-up display/universal asynchronous receiver/transmitter (HUD/UART) CCA.
+b. Discrete input/output (1/0) CCA.
+c. Line-of-sight (LOSS) CCA.*
+d. Controller interface CCA.
+
+66. (030))Which switching unit measurement stimulus subsystem (SUMSS) circuit card assembly(s) CCA(s) generate(s) symbology on the display/indicator (D/I) test station under the control of the ATLAS APPLY, SETUP, and REMOVE video symbology statements?
+
+a. Display controller CCA.*
+b. Cursive measurement CCA.
+c. Raster video generator CCAs.
+d. eads-up display/universal asynchronous reciever/transmitter (HUD/UART) circuit card assembly (CCA).
+
+67. (030)Which display/indicator (D/1) peculiar abbreviated test language for all systems (ATLAS) statement is used to modify one or more parameters set in a previous ATLAS statement?
+
+a. DO VIDEO RASTER.
+b. APPLY VIDEO RASTER.
+c. SETUP VIDEO RASTER.*
+d. REMOVE VIDEO RASTER.
+
+68. (030)Which abbreviated test language for all systems (ATLAS) statement branch will not close the relays for power application to the interface test adapter (ITA) pins when programming power supplies?
+
+a. DO.
+b. APPLY.
+c. SETUP.*
+d. CONNECT.
+
+69. (031)During LANTIRN HUD electronic unit (LBEU) testing, how is the protocol for pulse- width modulation (PWM) SERIAL DATA invoked?
+
+a. DO.*
+b. APPLY.
+c. READ.
+d. REMOVE.
+
+70. (032)Which processor/pneumatic (P/P) test system component provides precisely regulated static (Ps) and total (Pt) pressures?
+
+a. Compressed air bottle and regulator.
+b. Pneumatic function controller.*
+c. Pneumatic load assembly.
+d. Vacuum pump assembly.
+
+71. (032)VvUch pneumatic function controller/monitor mode disables all front panel controls except the power circuit breaker?
+
+a. Monitor mode.
+b. Reset dump mode.
+c. Remote control mode.*
+d. Pressure vacuum loss mode.
+
+72. (032)Which P/P test system component allows for a pressure to be generated and held at a constant value for measurement purposes?
+
+a. Vacuum pump assembly.
+b. Pneumatic load assembly.*
+c. Pneumatic function controller.
+d. Compressed air bottle and regulator.
+
+73. (032)Which threat simulator circuit card assembly (CCA) receives, buffers, and amplifies analog signals from the arbitrary function generators (AFGs) and provides relay power to the tester replaceable unit (IRU)?
+
+a. Signal interface CCA.*
+b. Quad conditioning circuit.
+c. Threat simulator controller CCA.
+d. Programmable summing amplifier.
+
+74. (033)Which processor/pneumatic (P/P) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) provides storage and an interface path for address, data, and block signals required to test the central interface unit (CIU) line replaceable unit (LRU)?
+
+a. Stores management system (SMS) data bus CCA.
+b. Advanced CIU CCA.
+c. CIU controllerCCA.
+d. CIU interface CCA.*
+
+75. (033)The processor/pneumatic (P/P) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) that simulates a remote interface unit (RIU) when testing the central interface unit (CIU) line replaceable unit (LRU) is the
+
+a. stores management system (SMS) data bus CCA.*
+b. CIU controller CCA.
+c. CITJ interface CCA.
+d. stray voltage CCA.
+
+76. (033)What voltage is applied to the interface test adapter (ITA) pins by the processor/pneumatic (P/P) peculiar, station stray voltage circuit card assembly (CCA), for the pin-to-pin isolation resistance test?
+
+a. 25 VDC.
+b. 50 VDC.
+c. 75 VDC.*
+d. 100 VDC.
+
+77. (033)Which processor/pneumatic (P/P) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) acts as a remote console to load and display the radar computer's internal registers and memory?
+
+a. RS- 170 video sync CCA.
+b. Radar processor controller.*
+c. Digital video port data CCA.
+d. Digital In Phase & Quadrature (I & Q) data CCA.
+
+78. (033)Which processor/pneumatic (P/P) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA) simulates radar receiver outputs to drive the digital signal processor line replaceable unit (LRU)?
+
+a. RS-170 video sync CCA.
+b. Radar processor controller.
+c. Digital video port data CCA.
+d. Digital in phase and quadrature (I&Q) data CCA.*
+
+79. (034)Which processor/pneumatic (P/P) peculiar abbreviated test language for all systems (ATIAS) statement must have a SETUP stores management system data bus (SMSDB) proceeding it before the stores management system (SMS) data bus circuit card assembly (CCA) begins accepting messages
+
+a. REMOVE SMSDB.
+b. ENABLE SMSDB.*
+c. APPLY SMSDB.
+d. READ SMSDB.
+
+80. (035)Which is the default rate on the processor/pneumatic (P/P) test station if RATE is not specified in the SETUP/APPLY manometric differential pressure statement?
+
+a. 0-inches of Hg.
+b. 2.5-inches Hg.
+c. 5-inches Hg.
+d. I 0-inches Hg.*
+
+81. (035)What is the minimum and maximum altitude that can be specified with a SETUP/APPLY manometric altitude statement?
+
+a. -1,000 to +99,999 feet.
+b. -2,000 to +99,999 feet.*
+c. -1,000 to +100,000 feet.
+d. -2,000 to +100,000 feet.
+
+82. (035)Which application is not a valid operation of the pneumatic function controller as specified in the abbreviated test language for all systems (ATLAS) statement?
+
+a. ALT.
+b. PRESS-A.
+c. DEPTH.*
+d. AIR SPEED.
+
+83. (035)When the CAL modifier element of the MEASURE NIANONETRIC statement is absent, what mode of operation is specified?
+
+a. Monitor.*
+b. Control.
+c. Remote.
+d. Local.
+
+84. (036)Modulation can be applied to which threats with an APPLY/SETUP pulse amplitude modulation (PAIIA) threat statement?
+
+a. 1, 3, and 5.
+b. 2, 4, and 6.
+c. 1, 2,and 3.
+d. 4, 5, and 6.*
+
+85. (03 6)In the APPLY, PAM syntax, what does a CAL I indicate in the CAL-TEST modifier?
+
+a. Use nominal alignment file.*
+b. Ignore PAM-threat alignment.
+c. Use calibration alignment files.
+d. Use backup calibration alignment files.
+
+86. (037)When the high-power radio frequency (RF) synthesized signal generator (SSG) is in the remote mode, all front panel switches are disabled except the
+
+a. HOLD and LINE MODE.
+b. HOLD and PRESET MODE.
+c. LINE and METER MODE.*
+d. METER and PRESET MODE.
+
+87. (037)What is the frequency range of the radio frequency (RF) synthesized signal generator used on the RF test station?
+
+a. 1 kHz to 1,280 kHz.
+b. 10 kHz to 1,280 MHz.*
+c. 1 MHz to 18 GHz.
+d. 10 MHz; to 18 GHz.
+
+88. (037)Vvhat radio frequency (RF) peculiar component provides the second local oscillator signal to the microwave measurement unit (NIMP?
+
+a. Phase noise chassis.
+b. Microwave stimulus interface (MSI).
+c. adio frequency synthesized signal generator (RF SSG).*
+d. High power radio frequency synthesized signal generator (RF SSG).
+
+89. (038)What phase noise chassis (PNQ operating mode is used to test the additive noise of the traveling wave tube (TWT) amplifier on the radio frequency (RF) test station?
+
+a. Pulsed.*
+b. UHF to X-band.
+c. VBF to X-band.
+d. (VHF or UHF) and X-band.
+
+90. (038)Which radio frequency (RF) test station test bus interface (TBI) circuit card assembly (CCA) controls the operation of the RF switch panel?
+
+a. TBI-I.
+b. TBI-6.
+c. BI-7.
+d. TBI-10.*
+
+91. (039)On the radio frequency (RF) test station, what microwave stimulus interface (MSI) measurement/control circuit card assembly (CCA) generates multiple pulses used to create complex waveforms?
+
+a. Memory.
+b. Processor.
+c. Timing generator/counter timer.
+d. Dual arbitrary function generator (AFG).*
+
+92. (040)On the radio frequency (RF) test station, what is the measurement range of the RF station microwave measurement unit (MMU)?
+
+a. 2 Hz to 18.5 MHz.
+b. 2 MHz to 18.5 GHz.
+c. 10 Hz to 18.5 MHz.
+d. 10 MHz to 18.5 GHz.*
+
+93. (040)On the radio frequency (RF) test station, which circuit card assemblies (CCAs) are not included in the microwave measurement unit's (MMU's) measurement/controller section that is used in the microwave stimulus interface's (MSI's) measurement/controller section?
+
+a. Dual arbitrary function generator (AFG).*
+b. Timing generator/counter timer.
+c. Processor.
+d. Memory.
+
+94. (041)On the radio frequency (RF) test station, with the different power sensors available, what is the overall power range of the power meters?
+
+a. -70 to +35dBm.*
+b. -70 to +OdBm.
+c. -35 to +70dBm.
+d. -35 to +OdBm.
+
+95. (042)Which radio frequency (RF) peculiar switching unit measurement stimulus subsystem (SUMMS) circuit card assembly (CCA) provides the input stimulus by generating coherent timing signals to the low power radio frequency (LPRF) line replaceable units (LRUs)?
+
+a. TACAN IN CCA.
+b. 56MHz A & B CCAs.*
+c. FSRS controller CCA.
+d. HSDB controller CCA.
+
+96. (042)Which radio frequency (RF) peculiar switching unit measurement stimulus subsystem (SUMSS) circuit card assembly (CCA(s) generates an increasing or decreasing delay that simulates an outbound or inbound aircraft?
+
+a. Multiplexer waveform generator (MWG) CCA.
+b. Processor/pneumatic (PP)/RF common memory CCA.
+c. Electronic countermeasures (ECM) bus controller CCA.
+d. Tactical air navigation (TACAN)/identification friend or foe (IFF) CCA.*
+
+97. (042)Which radio frequency (RF) peculiar switching unit measurement stimulus subsystem (SUMMS) circuit card assembly (CCA(s) generates timing and control signals to the modular low power radio frequency (MLPRF) line replaceable units (LRUs)?
+
+a. MWG CCA.
+b. LPRF A and B CCAs*
+c. ECM bus controller CCA.
+d. PP/RF common memory CCA.
+
+98. (043)In an APPLY statement used for microwave stimulus on the radio frequency (RF) test station, the element FREQ has an allowable range of
+
+a. 1 MHz to 18 MHz.
+b. 10 MHz to 18 MHz.
+c. 1 MHz to 18.5 GHz.
+d. 10 MHz to 18.5 GHz.*
+
+99. (043)In the APPLY/SETUP statement used for microwave stimulus on the radio frequency (RF) test station, what is the allowable range of the element MOD-FREQ?
+
+a. 1 Hz to 2 kHz.
+b. 1 kHz to 500 kHz.
+c. 10 Hz to 25 kHz.*
+d. 100 Hz to 250 kHz.
+
+100. (044)In the APPLY C-W statement when using the radio frequency (RF) test station power meters, what argument is used to determine the resource code of the station stimulus port to be measured?
+
+a. 'TRU'.
+b. 'CNX CODE'.*
+c. 'CNX NAME'.
+d. 'BEAD CODE'.
+
+101. (201)Which improved avionics intermediate shop circuit card assemblies provide for dedicated signal connections for video signal routing, arbitrary function generator trigger input and sync output, identification, friend or for detected output, and timing generator trigger and sync signals to and from tile unit under test?
+
+a. Stimulus feedthru circuit card assemblies (CCA).*
+b. Dedicated input/output CCAs.
+c. General-purpose switch CCAs.
+d. Improved discrete output CCAs.
+
+102. (201 )A communications link between the improved avionics intermediate shop station computer and the improved discrete output circuit card assembly is provided by the circuitry that makes up the circuit card assembly's
+
+a. self-test MUXs.
+b. switching-matrix relay trees.
+c. LLUC, test bus, and control interface.*
+d. digital-to-analog command and control interpreter.
+
+103. (201)On improved avionics intermediate shop, general purpose, switch circuit card assemblies, operational control signals for relays K26 through K30 come from the unit under test
+
+a. only.
+b. or the station computer.*
+c. the station computer, or the modular relay driver.
+d. or a combination of the station computer and modular relay driver.
+
+104. (201)On an improved avionics intermediate shop improved digital-to-analog converter circuit card assembly, each high-resolution digital-to-analog converter (DAC) channel has an output voltage range of
+
+a. +10 VDC to +100 VDC.
+b. ±1 0 VDC or ±1 00 VDC.*
+c. +20 VDC to +200 VDC.
+d. ±20 VDC or ±200 VDC.
+
+105. (201)What improved avionics intermediate shop circuit card assembly provides three switching networks that effectively increase the interface between the unit under test and itself?
+
+a. EMM CCA.*
+b. IDO CCA.
+c. GPS CCA.
+d. IDAC CCA.
+
+106. (201)On improved avionics intermediate shop expansion measurement matrix circuit card assemblies, low-voltage channels I and 2 connect any one of
+
+a. 7 analog input signals to any one of 40 outputs.
+b. 10 analog input signals to any one of 100 outputs.
+c. 40 analog input signals to any one of 7 outputs.*
+d. 100 analog input signals to any one of 10 outputs.
+
+107. (202)What improved avionics intermediate shop circuit card assembly contains five modular, divided by N counters, and 9 gate arrays that generate interpulse period signals and tile voltage controlled crystal oscillator strobe?
+
+a. Modular low-power radio frequency (MLPRF) circuit card assembly ( CCA).*
+b. Serial interface CCA.
+c. Interface Controller CCA.
+d. Advanced Bus emulator CCA.
+
+108. (202)Which improved avionics intermediate shop circuit card assembly provides bi-phase stimulus to the unit under test, then evaluates the bi-phase response from the unit under test?
+
+a. Modular low-power radio frequency (MLPRF) circuit card assembly ( CCA).
+b. Serial interface CCA.*
+c. Dedicated input/output CCA.
+d. Advanced bus emulator CCA.
+
+109. (202)Which improved avionics intermediate shop circuit card assembly provides stimulus and interface buffering for the advanced bus emulator circuit card assembly?
+
+a. Modular low-power radio frequency (MLPRF) circuit card assembly ( CCA).
+b. Serial interface CCA.*
+c. Advanced bus emulator CCA.
+d. Dedicated input/output CCA.
+
+110. (202)The improved avionics intermediate shop advanced bus emulator circuit card assemblies are controllers that provide emulation of
+
+a. serial and parallel buses used to interface a unit under test (UUT).*
+b. serial and parallel buses used to interface the optical test bench.
+c. serial buses used as an interface between the IAIS measurement and testing subsystems (only).
+d. parallel buses used as an interface between the IAIS measurement and testing subsystems (only).
+
+111. (202)The improved avionics intermediate shop advanced bus emulator circuit card assembly clock select circuit provides
+
+a. all timing signals necessary for proper interface unit operation.
+b. an on-board timing generator source, clock control, and clock and strobes to the (UUT) interface.*
+c. a method of ensuring the uniform transmission of UUT test results to the measurement subsystem.
+d. the means of selecting one of two clock speeds to govern the desired processing speed of the station CPU.
+
+112. (202)Which advanced bus emulator circuit provides various switch paths for timing the self-test and unit under test operational programs?
+
+a. Clock select.*
+b. Data section.
+c. Microsequencer.
+d. Receivers and drivers.
+
+113. (202)Tile improved avionics intermediate shop interface controller circuit card assembly provides peculiar input/output (1/0) capabilities for the unit under test and 1/0 interface backplane. In addition, this circuit card has built-in capabilities to monitor
+
+a. fluctuations in facility input power.
+b. tile status of all improved avionics intermediate shop (IAIS) input/output operations.
+c. unit under test (UUT) over-temperature and over-voltage conditions.
+d. the power Supply self-test and tile interface test adapter interlock.*
+
+114. (202)What interface controller circuit card assembly circuit provides on-board direction and includes read/write and read-only capabilities?
+
+a. Control circuit.*
+b. Trigger bus routing.
+c. Resource management.
+d. Emitter-Coupled logic (ECL) clock drivers and receivers.
+
+115. (202)What interface controller circuit card assembly circuit provides software board identification?
+
+a. Control circuit.
+b. Trigger bus routing.
+c. Resource management.*
+d. Emitter-coupled logic (ECL) clock drivers and receivers.
+
+116. (203)The improved avionics intermediate shop improved low-frequency measurement circuit card assemblies route conditioned signals for measurement to the
+
+a. analog channel circuit card assemblies (CCA) in instrument unit A.*
+b. dual power meter in the microwave measurement unit.
+c. internal cursive measurement CCA in instrument unit B.
+d. low frequency receiver CCA in the microwave measurement unit.
+
+117. (203)What improved low-frequency measurement circuit card assembly circuit provides a means of selecting analog inputs for the programmable attenuator circuit, and provides a feed-thru path between the unit under test and the four-wire measurement bus?
+
+a. AC leveler.
+b. Input relays.*
+c. Main amplifier.
+d. Trigger detector.
+
+118. (203)What improved low-frequency measurement circuit card assembly circuit conditions input signals to provide a maximum ±2-VDC input to the amplifier?
+
+a. AC leveler.
+b. Input relays.
+c. Trigger detector.
+d. Programmable attenuator circuit.*
+
+119. (203)The frequency range of the improved avionics intermediate shop high-frequency measurement circuit card assembly is
+
+a. DC to 10 MHz.*
+b. AC to 10 MHz.
+c. DC to 100 MHz.
+d. AC to 100 MHz.
+
+120. (204)What single circuit card assembly was designed to perform the same functions as the five- processor circuit card assemblies included in the A900-series computer?
+
+a. Processor circuit card assembly (CCA).*
+b. 8 channel multiplexer (MUX) CCA.
+c. 8Mb ECC memory array CCA.
+d. Computer test station interface CCA.
+
+121. (204)On improved avionics intermediate shop processor circuit card assembly, what is the main difference between on-board self-tests I and 2?
+
+a. There is no difference-the self-tests are redundant for added processor integrity.
+b. Self-test I tests processor circuit level; self-test 2 tests the processor at the functional level.*
+c. Self-test I tests the processor at tile functional level; self-test 2 tests processor circuit hardware
+d. Self-test I tests tile processor at both the hardware and functional level; self-test 2 tests circuit hardware only
+
+122. (204)What improved avionics intermediate shop computer circuit card assembly is capable of correcting all single-bit errors, plus detecting all double-bit errors and many multiple-bit errors?
+
+a. Processor circuit card assembly (CCA).
+b. 8-channel multiplexer (MUX) CCA.
+c. 8-Mb error-correcting code (ECC) memory array CCA.*
+d. Computer test station interface CCA.
+
+123. (204)What improved avionics intermediate-shop computer circuit card assembly provides a method for interfacing HP 1000 A- or L- series computers to an RS-232-C or RS-423 compatible device connected in a hardwired or passive full-duplex modem point-to-point environment?
+
+a. Processor circuit card assembly (CCA).
+b. 8-channel multiplexer (MUX) CCA.*
+c. 8-Mb error-correcting code (ECC) memory array CCA.
+d. Computer test station interface CCA.
+
+124. (204)What improved avionics intermediate-shop computer circuit card assembly provides Institute of Electrical and Electronics Engineers-488 interface?
+
+a. Processor circuit card assembly (CCA).
+b. General-purpose interface bus (GPIB).*
+c. 8-channel multiplexer (MUX) CCA.
+d. Computer test station interface CCA.
+
+125. (205)What are the two setup methods used in configuring the improved avionics intermediate shop touch panel display, and which configuration always overrides the other?
+
+a. Screens and jumpers; jumpers override setup screens.*
+b. Screens and jumpers; setup screens override jumpers.
+c. Toggle switches and jumpers; jumpers override toggle switches.
+d. Toggle switches and jumpers; toggle switches override jumpers.
+
+126. (205)On the improved avionics intermediate shop touch panel display's infrared touch sensor, which touch mode only registers a report of the coordinates where a finger first breaks the infrared beams as it makes contact with the screen?
+
+a. Exit.
+b. Track.
+c. Entry;*
+d. Multiple touch.
+
+127. (205)Oil the improved avionics intermediate Shop touch panel display's infrared touch sensor, which touch mode only, registers a report of the coordinates where a finger fast breaks the infrared beams as it is lifted from the screen?
+
+a. Track.
+b. Entry.
+c. Exit.*
+d. Multiple touch.
+
+128. (205)On the improved avionics intermediate shop touch panel display, which touch mode sends a report of the coordinates of a finger at each change of position as it moves around the screen.?
+
+a. Exit.
+b. Track.*
+c. Entry.
+d. Multiple touch.
+
+129. (205)On the improved avionics intermediate shop touch panel display, which touch mode sends an error report whenever the user touches the screen in more than one place at a time?
+
+a. Track.
+b. Entry.
+c. Exit.
+d. Multiple touch.*
+
+130. (205)Which power-up condition constitutes an improved avionics intermediate shop hand-held terminal malfunction?
+
+a. The keyboard test reveals closed contacts.*
+b. All 35 elements of the display are on at the same time.
+c. After 20 seconds, no characters appear on the HHT display.
+d. The interface drivers become disconnected from the internal UART.
+
+131. (205)During which test does the hand-held terminal disconnect the interface drivers from the internal universal asynchronous receiver-transmitter and loop back internal data and handshake lines to verify proper operation?
+
+a. Interface.*
+b. Keyboard.
+c. Display.
+d. Memory.
+
+132. (205)What is the storage capacity for each side of the type of optical disk used in the improved avionics intermediate shop station's optical disk drives?
+
+a. 1300 megabytes.
+b. 650 megabytes.
+c. 588 megabytes.
+d. 294 megabytes.*
+
+133. (205)It is necessary to momentarily heat a magneto-optical disk above its "Curie temperature" when writing data to it to
+
+a. lower the disk's coercivity, thus making it susceptible to changes in its magnetic state or polarity.*
+b. raise the disk's coercivity, thus making it susceptible to changes in its magnetic state or polarity.
+c. lower the disk's coercivity, thus preventing accidental changes in its magnetic state or polarity.
+d. raise the disk's coercivity, thus preventing accidental changes in its magnetic state or polarity.
+
+134. (206)The input signals From the unit wider test to the improved avionics intermediate shop input buffer circuit card assembly are attenuated to
+
+a. cancel out thermally-generated voltages.
+b. prevent damage to the buffering circuits.
+c. prevent the output to the analog channel A and B circuit card assemblies (CCA) from exceeding ±2 VDC*
+d. ensure the output to the last analog-to-digital converter CCA does not exceed 20 dB.
+
+135. (206)What are the output voltages from the improved avionics intermediate shop direct current reference and resistance circuit card assembly?
+
+a. ±2 VDC, ± 10 VDC, and ± 100 VDC.*
+b. ± 10 VDC, ±20 VDC, and ±50 VDC.
+c. ±20 VDC, ±50 VDC, and ± 150 VDC.
+d. ±50 VDC, ± 100 VDC, and ± 150 VDC.
+
+136. (206)The improved avionics intermediate shop analog channel A and B circuit card assemblies condition analog signals before
+
+a. performing a "two's complement" on them.
+b. performing a "one's complement" on them.
+c. analog-to-digital conversion by the fast A/D converter CCA.*
+d. digital-to-analog conversion by the fast D/A converter CCA.
+
+137. (206)Which circuit in the improved avionics intermediate shop high-speed memory/arithrnetic unit circuit card assembly provides arithmetic-averaging functions for storing data in memory?
+
+a. 2K RAM.
+b. I 0-MHz clock.
+c. High-speed memory (HSM)/ARITH unit application-specific integrated circuit (ASIC).*
+d. Lower-level user card (LLUC), test bus, and control interface.
+
+138. (206)Which circuit in the improved avionics intermediate shop high-speed memory/arithmetic unit circuit card assembly acts as a 12-bit two's-complement converter that monitors the 12 most significant bits of the data bus?
+
+a. Analog switch.
+b. High-speed memory (HSM)/ARITH unit ASIC.
+c. Data-gate buffer and switching array.
+d. Self-test digital-to-analog converter.*
+
+139. (206)The improved avionics intermediate shop advanced counter/timer circuit card assembly performs frequency measurements by counting
+
+a. known FREQ cycles during a known GATE time period.
+b. unknown FREQ cycles during a known GATE time period.*
+c. known FREQ cycles during an unknown GATE time period.
+d. unknown FREQ cycles during an unknown GATE time period.
+
+140. (206)The improved avionics intermediate shop advanced counter/timer circuit card assembly performs time-period measurements by counting
+
+a. known FREQ cycles during a known GATE time period.
+b. unknown FREQ cycles during a known GATE time period.
+c. known FREQ cycles during an unknown GATE time period.*
+d. unknown FREQ cycles during an unknown GATE time period.
+
+141. (206)Which improved avionics intermediate shop trigger selector circuit card assembly circuit interfaces with the bi-directional station trigger buses to transfer trigger signals between the measurement subsystem and other circuit card assemblies?
+
+a. 10-MHz oscillator.
+b. Control interface.*
+c. Time-of-day clock.
+d. Trigger selector application-specific integrated circuit (ASIC).
+
+142. (206)How are frequency adjustments made to the improved avionics intermediate shop I O-MH standard?
+
+a. By adjusting the on-board trim potentiometer.*
+b. By adjusting the output of the I 0-MHz oscillator oil the trigger selector circuit card assembly (CCA).
+c. By adjusting the output of tile FREQ input select circuit on the advanced counter/timer CCA.
+d. the 10 MHz oscillator assembly must be replaced if it is out of tolerance.
+
+143. (207)What improved avionics intermediate shop instrument unit B circuit card assembly is capable of generating and measuring 16 channels of discrete analog voltages ranging from -32 VDC to +32 VDC?
+
+a. Timing generator circuit card assembly (CCA).
+b. Discrete input/output CCA.*
+c. Raster video generator CCA.
+d. Synchro generator/measurement CCA.
+
+144. (207)What improved avionics intermediate shop instrument unit B circuit card assembly (CCA) generates pulses and pulse trains for the timing of analog stimulus and measurement?
+
+a. Timing generator CCA.*
+b. Discrete input/output CCA.
+c. Raster video generator CCA.
+d. Synchro generator/measurement CCA.
+
+145. (207)What improved avionics intermediate shop instrument unit B circuit card assembly (CCA) provides the video and synchronization signals that are used to display raster patterns on the unit under test?
+
+a. Timing generator CCA.
+b. Discrete input/output CCA.
+c. Raster video generator CCA.*
+d. Synchro generator/measurement CCA.
+
+146. (207)What programmable attributes are available for the output signal from the improved avionics intermediate shop pulse generator output circuit card assembly?
+
+a. Amplitude and offset only.
+b. Offset and transition time only
+c. Amplitude and transition time only.
+d. Amplitude, offset, and transition time.*
+
+147. (207)The improved avionics intermediate shop threat simulator circuit card assembly is capable of simulating
+
+a. four radar video threat signals.*
+b. five radar video threat signals.
+c. seven radar video threat signals.
+d. ten radar video threat signals.
+
+148. (207)Which improved avionics intermediate shop threat simulator circuit card assembly circuit provides amplitude conditioning for tile Output signals that are proportional to the signal strength of a simulated threat?
+
+a. Offset digital-to-analog converter (DAC).*
+b. Trigger bus drivers.
+c. Each individual threat circuit.
+d. Lower-level user card (LLUC), test bus, and control interface.
+
+149. (207)The improved avionics intermediate shop raster video generator "C" circuit card assembly receives the transistor-transistor logic-level video and synchronization signals it uses to generate MAVERICK video from the
+
+a. discrete input/output circuit card assembly (CCA).
+b. raster video generator "A" CCA.*
+c. advanced display controller CCA.
+d. synchro generator/measurement CCA.
+
+150. (208)How many improved avionics intermediate shop, Abbreviated Test Language for All Systems (ATLAS), syntax statements can you use to control the power supply unit?
+
+a. Two.
+b. Three.
+c. Four.*
+d. Five.
+
+151. (209)Microprogramming is used on the improved avionics intermediate shop test station because
+
+a. it is so specified in the manufacturer's utilization contract.
+b. the action/response time of the ATLAS language is usually too fast.
+c. it is the only programming language compatible with the test station central processing unit
+d. the action/response time of the ATLAS language is not always fast enough.*
+
+152. (209)The drawback to microprogramming in the improved avionics intermediate shop test station is that it is
+
+a. sequential in nature, thus making it especially prone to syntax errors.
+b. sequential in nature, thus lacking the ability to branch or make decisions.*
+c. nonsequential in nature, thus making it especially prone to syntax errors.
+d. nonsequential in nature, thus lacking the ability to branch or make decisions.
+
+153. (210)What types of radio frequency output signals are available from the improved avionics intermediate shop microwave stimulus unit?
+
+a. CW, AM. FM, and PM.
+b. AM, FM, PM, and DM.
+c. CW, AM. PM, and side-lobe suppression.*
+d. CW, AM, FM, and side-lobe suppression.
+
+154. (2 10)Which improved avionics intermediate shop microwave stimulus unit shop replaceable is capable of switching incoming radio frequency signals to either the microwave stimulus un main output port or its precision port?
+
+a. Frequency synthesizer.
+b. Low-frequency output.
+c. High-frequency output.*
+d. Low-frequency leveler/amplifier.
+
+155. (210)In the improved avionics intermediate shop microwave measurement unit, what shop replaceable unit's output is routed to the self-test circuit card assembly, which then provides accurate power measurement and a wide dynamic range for both continuous wave and pulsed signals?
+
+a. intermediate frequency (IF) log/lin receiver.*
+b. counter/timer interface.
+c. Radio frequency (RF) input and downconverter.
+d. dual arbitrary function generator.
+
+156. (210)Which improved avionics intermediate shop microwave measurement unit component provides gate signals to the timing generator/counter-timer circuit card assembly for frequenc3 measurements?
+
+a. Self-test circuit card assembly (CCA).*
+b. Counter/timer interface shop replaceable unit (SRU).
+c. Radio frequency (R.F) input and downconverter SRU.
+d. Dual arbitrary function generator CCA.
+
+157. (211)The photometric adapter assembly does not
+
+a. measure area luminance.
+b. transmit RS-232 type data.
+c. measure monochrome luminance.
+d. measure the angular position of targets.*
+
+158. (211 )The digital theodolite assembly on the optical test bench is used to measure
+
+a. area luminance.
+b. internal illumination.
+c. monochrome luminance.
+d. the angular position of targets.*
+
+159. (211 )The power distribtition system oil the optical test bench receives its power from the
+
+a. power supply unit.
+b. power control Unit.*
+c. frequency changer unit.
+d. control and display Unit.
+
+160. (211 )The acceptable inputs to the optical test bench power distribution system are
+
+a. 208 vrms at 50 Hz; 230 vrms at 60 Hz, and 115 vrms at 60 Hz.
+b. 230 vrms at 50 Hz, 208 vrms at 60 Hz, and 115 vrms at 60 Hz.
+c. 208 vrms at 50 Hz, 230 vrms at 60 Hz, and 200 vrms at 400 Hz.
+d. 230 vrms at 50 Hz, 208 vrms at 60 Hz, and 200 vrms at 400 Hz.*
+
+161. (211 )The programmable output range of the variable direct current power SLIPPIY on the op test bench is
+
+a. 0 to 5 VDC; 0.8 amps.
+b. 0 to 10 VDC; 1.2 amps.
+c. 0 to 18 VDC, 1.6 amps.*
+d. 0 to 24 VDC; 2.0 amps.
+
+162. (212)The power factor correction circuitry in the power conversion assembly of the power and control unit
+
+a. can be disabled through software control.
+b. prevents overvoltage and overcurrent conditions.
+c. ensures that the input current is in phase with the input voltage.*
+d. ensures that the input current is in phase with the output current.
+
+163. (212)The radio frequency (RF) filter interference assemblies in the power and control unit are designed to
+
+a. eliminate RF noise interference from the power and control unit (PCU) output.
+b. eliminate RF noise interference from the input power source.
+c. provide 60 amps of circuit protection for the power and control unit when facility power becomes unstable.
+d. provide 125 amps of circuit protection for the power and control unit when facility power becomes unstable.*
+
+164. (213)In the improved avionics intermediate shop's power supply unit, what components keep high- and low-frequency noise to a minimum, while preventing that noise from being passed back to the power source?
+
+a. Electromagnetic interference (EMI) assembly and filter assembly.*
+b. Main bias supply and filter assembly.
+c. Capacitor assembly and EMI assembly.
+d. Capacitor assembly and main bias supply.
+
+165. (213)The improved avionics intermediate shop power supply unit is configured for interface wit the station computer by means of
+
+a. three four-position dip switches located on the GPIB interface circuit card assembly (CCA).
+b. two four-position dip switches located on the GPIB interface CCA.
+c. three eight-position dip switches located on the GPIB interface CCA.
+d. two eight-position dip switches located on the GPIB interface CCA.*
+
+166. (214)What type of output signals are available from the improved avionics intermediate shop frequency changer unit?
+
+a. Single-phase 400-Hz or single-phase 800-Hz outputs only.
+b. Three-phase 400-Hz or single-phase 800-Hz outputs only.
+c. Single-phase 400-Hz or single- and three-phase 800-Hz outputs.
+d. Single- and three-phase 400-Hz or single-phase 800-Hz outputs.*
+
+167. (214)What improved avionics intermediate shop frequency changer unit assembly receives and processes incoming data strings that are used to set the appropriate Output relay configurations and establishes current-limit and current-Iimit-delay parameters?
+
+a. Module status circuit card assembly (CCA).
+b. Auxiliary bias supply.
+c. output switching control CCA.
+d. Unit Status and monitoring CCA.*
+
+168. (215)The improved avionics intermediate shop refrigeration unit begins conditioning the unit under test cooling air coming from the blower unit when the
+
+a. air from the blower unit exceeds 62.6' C.
+b. air from the blower unit exceeds 62.6' F.*
+c. refrigeration control and fault monitor CCA receives a HITEMP signal from the unit under test (UUT).
+d. refrigeration control and fault monitor CCA receives a HITEMP signal from the blower unit.
+
+169. (216)When operating under manual control, the improved avionics intermediate shop blower unit
+
+a. overrides the general-purpose interface bus GPIB mode.*
+b. operates at minimum speed.
+c. regulates air outlet temperature.
+d. protects the unit from drawing too much current.
+
+170. (216)What improved avionics intermediate shop blower unit assembly component, when 
+used in conjunction with the control and signal conditioning circuit card assembly and the general purpose interface bus interface assembly, is part of a feedback loop that 
+regulates blower speed?
+
+a. Fault relay.
+b. The airflow sensor.*
+c. Frequency-to-voltage converter.
+d. Airflow feedback transmitter circuit card assembly (CCA).

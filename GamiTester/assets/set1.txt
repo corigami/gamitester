@@ -1,0 +1,1469 @@
+1. (001)The program depot maintenance inspection concept applies to
+
+a. Transport aircraft.
+b. Strategic aircraft.
+c. Tactical aircraft.
+d. All of the above.*
+
+2. (001)Which inspection is performed before resuming flying activity after the aircraft has been inactive for a specified period of time?
+
+a. Phased.
+b. Preflight.*
+c. End-of-runway.
+d. Basic postflight.
+
+3. (001)Which inspection is a combination of the hourly postflight and/or basic postflight inspections and periodic inspection requirements?
+
+a. Minor.
+b. Major.
+c. Phased.*
+d. Periodic.
+
+4. (001)Which inspection is designed to reduce the time an aircraft is out of commission for any given inspection?
+
+a. Major.
+b. Phase.*
+c. Preflight.
+d. Hourly postflight.
+
+5. (002)Acceptance inspections are performed when
+
+a. equipment is being transferred.
+b. newly acquired equipment arrives.*
+c. 90 days has passed since the last phased inspection.
+d. it is stated in the applicable technical order.
+
+6. (002)The two best ways to prevent corrosion in a test station or LRU are
+
+a. cleaning and scouring.
+b. painting and cleaning.*
+c. painting and lubricating.
+d. cleaning and lubricating.
+
+7. (002)Which statement is not true concerning lubrication of your test stations?
+
+a. Prevents failure due to wear.
+b. Prevents the accumulation of dust and dirt.*
+c. Reduces the friction between two sliding surfaces.
+d. Is done less frequently than cleaning and corrosion control.
+
+8. (003)The accountable activity is responsible for maintaining category
+
+a. I equipment.
+b. I (USER) equipment.*
+c. I (PMEL) equipment.
+d. IIII equipment.
+
+9. (003)The category III time, measurement, and diagnostic equipment (TMDE) used to maintain and calibrate category I and Il equipment is used by the 2AOX1 technician as
+
+a. a shop standard.*
+b. a PMEL standard.
+c. peculiar test equipment.
+d. common test equipment.
+
+10. (003)Policy guidance for calibration of equipment associated with various aircraft systems is provided by which TO series?
+
+a. 00-5.
+b. 1B-1.
+c. 33D.
+d. 33K.*
+
+11. (004)Calibration is the comparison between two instruments, one of which is
+
+a. a test station.
+b. a standard of known accuracy.*
+c. a line replaceable unit.
+d. as accurate as the test station.
+
+12. (004)A properly calibrated test station is considered what type of standard during line replaceable unit (LRU) testing?
+
+a. Base reference.
+b. Laboratory.
+c. Secondary.*
+d. Working.
+
+13. (004)What is the purpose of the Air Force system of calibration standards?
+
+a. Ensure measurements at all locations are standardized.*
+b. Ensure calibration practices are standardized.
+c. Eliminate the need for national reference standards.
+d. Prevent abuse of standards between calibration cycles.
+
+14. (004)In addition to equipment identification number and the calibration due date, a certification label contains
+
+a. the category of test equipment.
+b. the certification stamp of the using activity.
+c. special information pertaining to the equipment.*
+d. specific safety guidance.
+
+15. (004)Which of the following AFTO forms is used to identify limited certification?
+
+a. AFTO Form 99.*
+b. AFTO Form 108.
+c. AFTO Form 255.
+d. AFTO Form 394.
+
+16. (004)To prevent tampering with adjustments that affect calibration, the owning work center may request the precision Measuring Equipment Laboratory (PMEL) to use
+
+a. AFTO Form 108.
+b. AFTO Form 255.*
+c. AFTO Form 256.
+d. AFTO Form 398.
+
+17. (004)If a certification label does not contain an inspection stamp or certifying initials, you should
+
+a. initial the certification block.
+b. return the item to PMEL.
+c. remove the certification label.
+d. notify your supervisor immediately.*
+
+18. (004)What program establishes levels of authorized standards to ensure each calibration standard can be traced to a certified measurement source?
+
+a. Air Force Metrology and Calibration Program.*
+b. Air Force Traceability and Standards Program.
+c. National Measurement Standards Program.
+d. Calibration and Standards Program.
+
+19. (004)Which of the following calibration standards are test, measurement, and diagnostic equipment (TMDE) certified by precision measuring equipment laboratory, using base measurement standards?
+
+a. Air Force measurement standards.
+b. National measurement standards.
+c. Wing standards.
+d. Working standards.*
+
+20. (004)Which calibration standards are possessed and used by the Air Force Primary Standards Laboratory?
+
+a. Air Force measurement standards.*
+b. National measurement standards.
+c. Wing standards.
+d. Working standards.
+
+21. (005)Which level of maintenance closely supports organizational maintenance?
+
+a. On-equipment, operating command.
+b. off-equipment, AFMC.
+c. Intermediate.*
+d. Depot.
+
+22. (006)How many major types of computer manuals are there?
+
+a. Two.*
+b. Three.
+c. Four.
+d. Five.
+
+23. (007)Which publication is a consolidated index of embedded computer system (ECS) software within the Air Force?
+
+a. Command and Control Systems.
+b. Computer Reference Manual.
+c. Technical Order Index.
+d. CPIN Compendium.*
+
+24. (007)The compute program identification number (CPIN) Compendium 80-0-2 cross references CPINs and
+
+a. stock numbers.
+b. technical orders.
+c. commercial manuals.
+d. equipment part numbers.*
+
+25. (008)What information does the third field position of a CPIN compendium number indicate?
+
+a. Major system and subsystem.
+b. Revision, baseline, and version.
+c. Type of software and sequence number.*
+d. Supplemental information to use with program.
+
+26. (009)Alpha code B in a computer program configuration item (CPIN) compendium indicates what level of test software?
+
+a. Base.
+b. Depot.
+c. Field.
+d. Intermediate*
+
+27. (009)How are abbreviations typed computer program configuration item (CPIN) software description data elements?
+
+a. Lower case.
+b. Upper case.*
+c. Italics.
+d. Script.
+
+28. (010)What technical order governs the maintenance, data documentation (MDD) system?
+
+a. 00-20-1.
+b. 00-20-2.*
+c. 00-20-21.
+d. 00-20-23.
+
+29. (010)The maintenance data documentation (MDD) process divides the documentation of production data into how many categories?
+
+a. Two.*
+b. Three.
+c. Four.
+d. Five.
+
+30. (011)How many types of work centers are there within the maintenance data documentation (MDD) process?
+
+a. Three.
+b. Four.*
+c. Five.
+d. six.
+
+31. (011)Which five-character maintenance data documentation (MDD) code is used to identify the system or subsystem that requires maintenance?
+
+a. Identification number.
+b. Job control number
+c. Maintenance code.
+d. Work unit code.*
+
+32. (012)What form is used to document maintenance data documentation (MDD) information for units that do not have assess to CAMS?
+
+a. 95.
+b. 244.
+c. 349.*
+d. 350.
+
+33. (013)What equipment status symbol indicates that an operational check is due?
+
+a. X.
+b. Dash.*
+c. Diagonal slash.
+d. X in a circle.
+
+34. (013)Which equipment status symbol indicates that an unsatisfactory condition exists but is not sufficiently dangerous enough to warrant discontinuing use of the equipment?
+
+a. X.
+b. Dash.
+c. Diagonal slash.*
+d. X in a circle.
+
+35. (014)The three basic CAMS subsystems commonly used by shop personnel are
+
+a. data collection, maintenance events, and inquiries.*
+b. data collection, maintenance events, and personnel.
+c. TCTOs, personnel, and inquiries.
+d. maintenance events, personnel, and training.
+
+36. (014)Which type of information should not be entered in core automated maintenance system (CAMS)?
+
+a. Classified.*
+b. Privacy Act.
+c. Personnel.
+d. For Official Use Only.
+
+37. (015)Which of the following is not a work center supply duty?
+
+a. Verifying and monitoring back-ordered requests.
+b. Processing reparable items through the repair cycle.
+c. Assigning priorities to requisitions going off base.*
+d. Taking immediate action to cancel parts requests that are no longer required.
+
+38. (016)What regulation governs the handling procedures for classified assets?
+
+a. ACCR 66-5.
+b. AFR 127-2.
+c. AFI 31-401.*
+d. MCR 67-1.
+
+39. (017)What is one of the uses of a special purpose recoverables authorized maintenance (SPRAM) asset?
+
+a. Fault isolation.*
+b. Cross-cannibalization.
+c. Primary mission equipment.
+d. Work center support equipment.
+
+40. (018)Deficiency Reporting procedures can be found in TO
+
+a. 00-20D-54.
+b. 00-34D-55.
+c. 00-35D-54.*
+d. 00-55D-34.
+
+41. (018)Which deficiency report requires submission within 3 workdays of the discovery of the deficiency?
+
+a. Cat I.
+b. Cat II.*
+c. Material.
+d. Software.
+
+42. (018)Which deficiency report category would you use to identify potential product improvement?
+
+a. Category I.
+b. Category II.*
+c. Category III.
+d. Category IV.
+
+43. (019)Which Air Force instruction provides guidance on the Air Force Occupational Safety and Health Administration (AFOSH) program?
+
+a. 91-102.
+b. 91-103.
+c. 91-301.*
+d. 91-302.
+
+44. (019)Who is responsible for providing AF personnel a safe work environment in which recognized hazards have been eliminated or controlled?
+
+a. Commander.*
+b. Flight chief
+c. Supervisor.
+d. Wing safety officer.
+
+45. (019)Which safety publication provides instructions and procedures on the US Air Force Mishap Prevention Program?
+
+a. 91-202.*
+b. 91-204.
+c. 91-213.
+d. 91-214.
+
+46. (019)Which safety publication provides instructions and procedures on the Operational Risk Management Program?
+
+a. 91-202.
+b. 91-204.
+c. 91-213.*
+d. 91-214.
+
+47. (020)What are some of the common safety hazards of the 2AOX1 career field?
+
+a. Lifting, chemical agents, noise, and confine spaces.
+b. Lifting, chemical agents, noise, and compressed gases.
+c. Lifting, cleaning agents, noise, and confine spaces.
+d. Lifting, cleaning agents, noise, and compressed gases.*
+
+48. (020)What is the minimum current that could disrupt a person's normal heart rhythm?
+
+a. 1 milliamps.
+b. 5 milliamps.
+c. 10 milliamps.
+d. 50 milliamps*
+
+49. (020)What is the main safety hazard associated with compressed gases?
+
+a. Depleting oxygen in confined spaces.
+b. Steel containers acting as projectiles*
+c. Eye injures from compressed gasses.
+d. Uncontrolled release of compressed gasses.
+
+50. (020)Which common safety hazard is governed by AFOSH Standard 48-19?
+
+a. Compressed gasses.
+b. Cleaning agents.
+c. Electrical hazards.
+d. Noise.*
+
+51. (021)Minimum requirements for an effective hazard communication program are provided in AFOSH Standard.
+
+a. 127-6.
+b. 127-46.
+c. 166-6.
+d. 161-21.*
+
+52. (021)Who is responsible for ensuring workers receiving proper training in the area of chemical hazards?
+
+a. Commander.
+b. Flight chief.
+c. Safety monitor.
+d. Supervisor.*
+
+53. (021)The written local hazard communication program must contain a complete hazardous chemical inventory, plans for informing and training personnel, and
+
+a. emergency evacuation procedures.
+b. specific guideline for proper use of chemicals.
+c. provisions for tracking the location of chemicals in the proper workplace.
+d. plans for labeling hazardous chemicals and providing Material Safety Data Sheets (MSDS).*
+
+54. (022)Chemicals that can cause explosions, fires, bums, and violent chemical reactions are know as
+
+a. health hazards.
+b. physical hazards.*
+c. occupational hazards.
+d. pyrophoric substances.
+
+55. (022)The degree of hazard associated with exposure to health hazards depends on
+
+a. skin absorption, chemical toxicity, individual differences.
+b. dosage, chemical toxicity, exposure route, and skin absorption.
+c. exposure route, length of exposure, dosage, and chemical toxicity
+d. chemical toxicity, exposure route, dosage, and individual differences.*
+
+56. (022)Which degree of hazard considers the amount of chemical that is absorbed into the bloodstream?
+
+a. Dosage.*
+b. High toxicity.
+c. Large toxicity.
+d. Individual differences.
+
+57. (023)Which AFOSH Standard provides minimum requirements for an effective radio frequency radiation (RFR) safety program?
+
+a. 49-8.
+b. 48-9.*
+c. 148-8.
+d. 121-9.
+
+58. (023)Which radio frequency radiation (RFR) control device automatically shuts off RFR emissions when a hatch is breached?
+
+a. Dummy load.
+b. Interlock.*
+c. Quick disconnect.
+d. RF absorber.
+
+59. (023)When operating radio frequency radiation (RFR) equipment, do not make close visual inspection of any RF reflector or port during
+
+a. receiving periods.
+b. transmission periods.*
+c. engagement of control devices.
+d. disengagement of control devices
+
+60. (024)Who is responsible for on-/off-equipment maintenance required to accomplish sortie production and the wing mission?
+
+a. Base commander.
+b. Group commander.*
+c. Squadron commander.
+d. Wing commander.
+
+61. (024)Who is responsible for ensuring that maintenance inputs, such as aircraft turnaround, alternate fuel cell, and explosive load areas, are included in the base parking plan?
+
+a. Base commander.
+b. Group commander.*
+c. Squadron commander.
+d. Wing commander.
+
+62. (024)Who is responsible for managing the squadron cannibalization program?
+
+a. Flight chief.
+b. Section chief.
+c. Maintenance supervisor.*
+d. Cannibalization supervisor.
+
+63. (024)Who is directly responsible to the maintenance supervisor for the management, supervision, and training of assigned personnel?
+
+a. Flight chief*
+b. Section chief.
+c. Maintenance chief.
+d. Maintenance operations center.
+
+64. (024)Which of the following is a responsibility of the maintenance operations center (MOC)?
+
+a. Reviews the guidance provided by the LG commander on cross functional areas.
+b. Ensures maintenance training is provided office, classroom, and hangar space.
+c. Notifies appropriate agencies of severe weather warnings.*
+d. Ensures quality assurance guidelines are being followed.
+
+65. (025)Which of the following squadrons exist under the operations group?
+
+a. Operations squadron and intelligence squadron.
+b. Reconnaissance squadron and flying squadron.
+c. Operations squadron and weather squadron.
+d. Reconnaissance squadron and air refueling.*
+
+66. (025)Which squadron consists of airfield, current operations, weapons and training,intelligence,and weather flights?
+
+a. Flying.
+b. Air refueling.
+c. Reconnaissance.
+d. Operation support.*
+
+67. (026)The Quality Assurance Program
+
+a. provides feedback to the operation group commander.
+b. maintains aircraft estimated time in commission.
+c. determines aircraft and equipment condition and personnel proficiency.*
+d. monitors and reports the status of electronic countermeasures and sensor pods.
+
+68. (926)What squadron in the logistics group performs off-equipment maintenance?
+
+a. Supply.
+b. Maintenance.*
+c. Transportation.
+d. Logistics support.
+
+69. (026)Which flight consists of pneudraulics, electro environmental, fuels system and egress sections?
+
+a. Accessory.*
+b. Avionics.
+c. Fabrication.
+d. Maintenance.
+
+70. (026)What flight in the maintenance squadron is responsible for maintaining nuclear weapons and reentry vehicles?
+
+a. Maintenance.
+b. Munitions.*
+c. Propulsion.
+d. Weapons.
+
+71. (200)When a fluid passes through a venturi, its velocity will
+
+a. remain constant.
+b. increase as it leaves the narrow part.
+c. decrease as it enters the narrow part.
+d. increase as it enters the narrow part.*
+
+72. (200)What is the amount of curvature above the chord line called?
+
+a. Angle of attack.
+b. Mean camber.
+c. Lower camber.
+d. Upper camber.*
+
+73. (200)What is the amount of curvature below the chord line called?
+
+a. Angle of attack.
+b. Mean camber.
+c. Lower camber.*
+d. Upper camber.
+
+74. (201)Which axis extends lengthwise through the fuselage from the nose to the tail of an aircraft?
+
+a. Lateral.
+b. Vertical.
+c. Horizontal.
+d. Longitudinal.*
+
+75. (201)What term identifies the motion about the lateral axis of an aircraft?
+
+a. Yaw.
+b. Bank.
+c. Roll.
+d. Pitch.*
+
+76. (201)Vvhich of these describe yaw?
+
+a. Left wing down.
+b. Right wing down.
+c. Nose up, nose down.
+d. Nose left, nose right.*
+
+77. (202)Which flight control surfaces are referenced to aircraft trailing edge?
+
+a. Rudders.
+b. Ailerons.
+c. Stabilators.
+d. All of the above.*
+
+78. (202)What do stabilators on an aircraft control?
+
+a. Roll and yaw.
+b. Pitch and yaw.
+c. Pitch and roll.*
+d. Yaw and direction.
+
+79. (202)What aircraft control surfaces control the movement of an aircraft about the vertical axis and produce the motion known as yaw?
+
+a. Wings.
+b. Rudders.*
+c. Flaperons.
+d. Elevators.
+
+80. (202)Aircraft motion can be controlled by all these surfaces except the
+
+a. rudder.
+b. fuselage.*
+c. flaperons.
+d. all-movable horizontal tail.
+
+81. (203)Of what is the flight control computer (FLCC) the main component?
+
+a. F- 16 flight control system.*
+b. F-16 hydromechanical system.
+c. F- 15 automatic flight control system.
+d. F-15 primary flight control system.
+
+82. (203)What flight control system (FLCS) component contains a force-sensing unit, which contains transducers in both the pitch and roll axes?
+
+a. Stick.*
+b. Throttle.
+c. Rudder pedals.
+d. Integrated servo actuator.
+
+83. (204)Which aircraft instruments allow the pilot to verify information supplied by the ADC?
+
+a. Air data.
+b. Flight.*
+c. Flight detector.
+d. Flight director.
+
+84. (204)What provides the aircrew with a visual pitch and roll heading, and command information?
+
+a. Air data computer.
+b. Flight instruments.
+c. Inertial navigation system.
+d. Flight director instruments.*
+
+85. (204)What LRU may develop errors during aerobatic maneuvering?
+
+a. ADI.
+b. SAI*
+c. VVI.
+d. HSI.
+
+86. (205)How many pushbuttons are located on the MPCD?
+
+a. 10.
+b. 15.
+c. 20.*
+d. 25.
+
+87. (205)What unit displays all attack symbology and steering for all F-15 weapons delivery and night terrain following operations?
+
+a. HUD.*
+b. MFD.
+c. MEPD.
+d. MCPD.
+
+88. (206)What F-16 unit acts as the primary bus controller for the AMUX, BMUX, and DMUX?
+
+a. Fire control computer.*
+b. Avionic interface unit.
+c. Flight control computer.
+d. Central computer interface.
+
+89. (206)What unit establishes communication on the 1553 MUX bus in backup mode for the F-15 upfront controls?
+
+a. Central computer.
+b. Avionics interface unit.
+c. Central computer interface.
+d. Multipurpose display processor.*
+
+90. (207)Multiplexing is best described as
+
+a. a way to interface multiple aircraft systems.
+b. a method of communication between analog aircraft systems.
+c. the concept of timesharing communication lines on the aircraft.
+d. the procedure of transmitting many digital signals over a single pair of wires.*
+
+91. (207)Which description is not an advantage of multiplexing?
+
+a. Reduces aircraft wiring.
+b. Decreases wiring problems.
+c. Increases aircraft reliability.
+d. Expands the number of systems that can be interconnected.*
+
+92. (207)The MLTX system timesharing concept is best described as
+
+a. digital and analog information alternating on the MUX system.
+b. avionics systems processing digital information at different times.
+c. all information that has to be processed takes turns on the same communication line.*
+d. a method of controlling the amount of time each avionics system can communicate on a MUX line.
+
+93. (207)The information exchange between systems on the MLJX must be
+
+a. quickly and accurately processed, controlled, and routed.*
+b. of short duration to allow maximum participation of all systems.
+c. carefully controlled to avoid confusion of commands and data on the MUX
+d. programmed into the MLJX system to set priority of each using aircraft system.
+
+94. (207)The MUX system component that regulates data transfer from a central point is the
+
+a. bus controller.*
+b. remote terminal.
+c. primary data bus.
+d. interface controller.
+
+95. (207)When completion of an operation on a data bus starts the next operation, the bus is said to function
+
+a. concurrently.
+b. consecutively.
+c. asynchronously.*
+d. monosynchronously.
+
+96. (207)The bus controller uses what types of computer words to communicate with the remote terminals?
+
+a. Command, data, and status.*
+b. Computer, parity, and status.
+c. Command, message, and priority.
+d. Data, message, and instructions.
+
+97. (207)The purpose of the computer word parity bit is to
+
+a. increase the chance for error-free transmission of data.*
+b. ensure all remote terminals are turned on and operating.
+c. ensure all circuits are operating in step with each other.
+d. keep MUX bus malfunctions from appearing at the remote terminals.
+
+98. (208)The air sensors that supply the inputs to the air data system are the
+
+a. pitot-static probe, Ti probe, and the AOA transmitter.*
+b. pitot-static: probe, Ti indexer, AOA transmitter.
+c. Ti indexer, AOA indicator, and the ADC.
+d. Ti probe, AOA transmitter, and the ADC.
+
+99. (208)What is the main purpose of the air data computer (ADC)?
+
+a. Reduce weight and space on the aircraft.
+b. Produce reference data for use by almost all other aircraft systems.*
+c. Mathematically convert all indicator values into usable information.
+d. Generate synchro outputs that can be sent to all the using subsystems.
+
+100. (208)The total temperature probe provides a temperature input for use by aircraft systems by producing
+
+a. a change in the resistance of its platinum elements.*
+b. voltage output changes from the probe's sensing elements.
+c. a change in current-flow through the probe's thermistor elements.
+d. frequency variations that emanate from the probe's platinum-laced crystals.
+
+101. (208)What does the AOA transmitter use to produce its output?
+
+a. Two pure platinum sensing elements.
+b. A stabilized gyroscope that detects aircraft angle.
+c. Two synchros that align the probe tip with the airstream.
+d. A movable sensing element that routes air into two synchro cavities.*
+
+102. (209)What major components compose the F-16 engine control system?
+
+a. Air data computer, digital electronics engine unit, and main fuel control.
+b. Afterburner fuel control, digital electronics engine unit, and main fuel control.*
+c. Air data computer, improved digital electronics engine unit, and main fuel control.
+d. Afterburner fuel control, improved digital electronics engine unit, and main fuel control.
+
+103. (209)What F-16 engine control system unit provides actuation pressure to the compressor inlet variable vane (CIVV) control and the convergent exhaust nozzle (CENO) control?
+
+a. Main fuel control.*
+b. Afterburner control.
+c. Digital electronics engine unit.
+d. Improved digital electronics engine unit.
+
+104. (209)What unit is the F- 15 pilot and maintenance technician's primary source of engine data?
+
+a. Head up display unit.
+b. Engine monitor display.*
+c. Multifunction display unit.
+d. Multipurpose color display unit.
+
+105. (210)The functions of a digital stores management system are initiated by the
+
+a. operator.*
+b. main computer.
+c. back-up computer.
+d. interface unit.
+
+106. (210)What two basic armament system controls are normally found on the pilot's stick grip?
+
+a. Trigger and chaff and flare switch.
+b. Trigger and armament release switch.*
+c. Armament release switch and missile mode switch.
+d. Armament release switch and chaff dispense switch.
+
+107. (210)Audio/communication control panels
+
+a. provide status of loaded missiles.
+b. are used during ground functional checks.*
+c. control the emergency release of conventional weapons.
+d. bypass the need to position the landing gear in the up position.
+
+108. (210)What bombing system release option can be equated to a single selected weapons release?
+
+a. Manual.*
+b. Computed.
+c. Automatic.
+d. Manual-computed.
+
+109. (211)What are the usable cargo dimensions of a 463L pallet?
+
+a. 108 inches by 88 inches.
+b. 108 inches by 84 inches.
+c. 104 inches by 84 inches.*
+d. 104 inches by 88 inches.
+
+110. (211)The total weight of a pallet of cargo secured with side nets and top net and not exceeding 96 inches in height is
+
+a. 8,000 pounds.
+b. 8,355 pounds.
+c. 10,000 pounds.
+d. 10,355 pounds.*
+
+111. (211)The 10,000 pound cargo weight limitation for a single pallet may be increased when the side and top nets are replaced by
+
+a. cargo straps only.
+b. cargo chains only.
+c. cargo straps and/or chains.*
+d. none of the above; the weight limit can't be increased.
+
+112. (211)What type of steering does the I OK adverse terrain forklift have?
+
+a. Bend steering.
+b. Radical steering.
+c. Articulated steering.*
+d. Reverse mount steering.
+
+113. (211)What does the term type of airdrop refer to when talking about airdrop?
+
+a. The way the loads exit the aircraft.
+b. The type of cargo parachute used.
+c. The rate of decent of the load.*
+d. The type of platform used.
+
+114. (212)What are latitude lines also called?
+
+a. Meridians and great circles.
+b. Meridians and small circles.
+c. Parallels and great circles.
+d. Parallels and small circles.*
+
+115. (212)What is true course (TC) an expression of in aerial navigation?
+
+a. Time.
+b. Distance.
+c. Direction.*
+d. Distance and time.
+
+116. (212)What is the difference, if any, between track and true course?
+
+a. Track and true course are the same.
+b. Track refers to latitude, and true course refers to longitude.
+c. Track is the intended path, and true course is the actual path.
+d. Track is the actual path, and true course is the intended path.*
+
+117. (212)Deviation is the pointing error in a compass needle from magnetic north that is caused by the
+
+a. south pole attractions.
+b. magnetic pull from the Earth's core.
+c. magnetic forces in the aircraft itself.*
+d. static electricity in the stratosphere.
+
+118. (213)In measuring acceleration, the changing of position with respect to some other body is defined as
+
+a. speed.
+b. motion.*
+c. velocity.
+d. direction.
+
+119. (213)What are the two types of inertial navigation system integrators?
+
+a. Analog and digital.*
+b. Motion and velocity.
+c. Electrical and mechanical.
+d. Acceleration and directional.
+
+120. (213)What component is the heart of the F-16 inertial navigation unit?
+
+a. Computer.
+b. Integrator.
+c. Stabilized platform.*
+d. Performance monitor.
+
+121. (214)How many aircraft can determine line-of sigbt distance from a lead aircraft in the tactical air navigation (TACAN) A/A mode?
+
+a. 5.*
+b. 6.
+c. 7.
+d. 8.
+
+122. (214)The tactical air navigation (TACAN) bearing, selected course, and range are displayed on the
+
+a. attitude direction indicator.
+b. digital electronics display.
+c. horizontal situation indicator.*
+d. standby attitude indicator.
+
+123. (215)The NAVSTAR GPS can locate and acquire satellites in less than five minutes with
+
+a. initialization data.
+b. current almanac data.*
+c. precise positioning service.
+d. standard positioning service.
+
+124. (215)In an embedded global positioning system a Kalman filter is used to model errors in
+
+a. latitude and longitude.
+b. velocity and position.*
+c. altitude and attitude.
+d. pitch and roll.
+
+125. (216)Identify the equipment that transmits the altitude of the airborne IFF/SIF?
+
+a. Encoding scalers.
+b. Decoding scalers.
+c. Altitude digitizer.*
+d. Altitude coder.
+
+126. (216)Which mode of operation is used for traffic identity?
+
+a. Mode 1.
+b. Mode 2.
+c. Mode 3/A.*
+d. Mode 4.
+
+127. (216)Which mode of operation is used for encrypted identity?
+
+a. Mode 1.
+b. Mode 2.
+c. Mode 3/A.
+d. Mode 4.*
+
+128. (217)What is the term for random or unintentional electron movement?
+
+a. Noise.*
+b. Distortion.
+c. Modulation.
+d. Heterodyning.
+
+129. (218)How many channels are available on the UHF radio?
+
+a. 300 transmit/receive.
+b. 700 transmit/receive.
+c. 3,000 transmit/receive.
+d. 7,000 transmit/receive.*
+
+130. (218)What frequency is displayed when the radio set control switch is set to GUARD?
+
+a. 225 MHz.
+b. 234 MHz.
+c. 243 MHz.*
+d. 325 MHz.
+
+131. (218)The main difference between a UHF radio and a Have-Quick modified radio is that the Have-Quick modified UHF has
+
+a. greater range.
+b. better reception.
+c. faster antenna switching.
+d. anti-jamming capabilities.*
+
+132. (219)Which frequency range is considered to be "line of sight"?
+
+a. BIF.
+b. LF.
+c. VHF.*
+d. VLF.
+
+133. (219)Which of these is not an advantage of VHF communications?
+
+a. VHF follows the curvature of the Earth.*
+b. VHF does not normally reflect back to the Earth from the ionosphere.
+c. Noise or static due to atmospheric conditions like electrical storms does not affect VHF signals.
+d. The frequency range of VHF, 30 MHz to 300 MHz, minimizes the interference from other sources in the signal path to the receiver.
+
+134. (220)To eliminate echoes from stationary objects, the frequency-shift principle is sometimes used with what type of radar set?
+
+a. Pulsed.*
+b. Modulated.
+c. Unmodulated.
+d. Stationary.
+
+135. (220)If the returned frequency from a Doppler radar set exhibits no change in frequency, the
+
+a. target is approaching the set.
+b. target is moving parallel to the set.*
+c. distance between the target and set is decreasing.
+d. distance between the target and set is increasing.
+
+136. (220)If the returned frequency from a Doppler radar set has decreased in frequency, the
+
+a. target is approaching the set.
+b. target is moving parallel to the set.
+c. distance between target and set is decreasing.
+d. distance between target and set is increasing.*
+
+137. (221)What is the purpose of the synchronizer in a radar system?
+
+a. Display range information.
+b. Time the operation of all units.*
+c. Monitor the operation of all other units.
+d. Measure the time between the transmission and the echo.
+
+138. (221)RF energy is carried to a radar antenna for radiation via the
+
+a. waveguide.*
+b. RF energizer.
+c. coaxial cable.
+d. connector assembly.
+
+139. (221)A principal advantage of a waveguide over a two-wire system is that the waveguide has
+
+a. greater frequency range.
+b. no risk of energy leaks.
+c. greater power-handling capability.*
+d. no problem using frequencies below 3,000 MHz.
+
+140. (222)What form of jamming is used when false and/or delayed signals are introduced into radar?
+
+a. RAM.
+b. Evasion.
+c. Electronic.*
+d. Mechanical.
+
+141. (400)When the current in a coil containing an iron core is increased to a point where a further increase in current adds very few lines of flux to the core, the core is said to be
+
+a. saturated.*
+b. diamagnetic.
+c. paramagnetic.
+d. ferromagnetic.
+
+142. (400)Refer to figure 1-9 of the text. The electromagnetic relay shown in the figure is being used as a vibrator and can change
+
+a. alternating current to direct current.
+b. direct current to alternating current.
+c. pulsating direct current to direct current.
+d. direct current to pulsating direct current.*
+
+143. (401)When a bar magnet is in alignment with the field, the
+
+a. field is reduced.
+b. field is distorted.
+c. magnetic lines of force are shortest.*
+d. magnetic lines of force are distorted.
+
+144. (401)The function of the synchro generator is to convert
+
+a. a mechanical position to an equivalent electrical position.*
+b. an electrical position to an equivalent mechanical position.
+c. a mechanical position to a mechanical position.
+d. an electrical position to an electrical position.
+
+145. (401)The small arrow on the rotor synchro schematic symbol indicates the angular
+
+a. displacement of the rotor.*
+b. displacement of the stator.
+c. position of the rotor magnetic field.
+d. position of the stator magnetic field.
+
+146. (402)The transistor amplifier configuration that is most often used in high-frequency applications is the
+
+a. common-base.*
+b. common-diode.
+c. common-emitter.
+d. common-collector.
+
+147. (402)Which transistor amplifier configuration is most often used in voltage or power amplifier circuits?
+
+a. Common-base.
+b. Common-diode.
+c. Common-emitter.*
+d. Common-collector.
+
+148. (402)Open-loop voltage gain is best described as
+
+a. the amplification factor of a differential integrated circuit.
+b. a voltage-dividing method using resistors between integrated circuits.
+c. the voltage gain of an operational amplifier without feedback connected.*
+d. the voltage gain of an operational amplifier with degenerative feedback connected.
+
+149. (402)Most operation amplifiers are connected in the
+
+a. inverting configuration.
+b. open-loop configuration.
+c. closed-loop configuration.*
+d. noninverting configuration.
+
+150. (403)What is an advantage of the half-wave rectifier over the full-wave rectifier?
+
+a. Has fewer parts.*
+b. Output is easier to filter.
+c. Provides less ripple in the output.
+d. Provides an output during 360' of the input cycle.
+
+151. (403)Bridge rectifier circuits produce a
+
+a. high voltage and low-current output.
+b. high voltage and high-current output.*
+c. medium voltage and high-current output.
+d. medium voltage and medium-current output.
+
+152. (403)The three-phase rectifier
+
+a. uses three diodes on each leg of the transformer.
+b. requires a total of nine diodes to complete its rectification.
+c. has three, single-phase voltage inputs that are 120' out-of-phase with each other.*
+d. has three, single-phase voltage inputs that are 180' out-of-phase with each other.
+
+153. (404)Which filter circuit uses both capacitors and inductors?
+
+a. IC section.
+b. L section.
+c. Pi section.*
+d. Capacitive.
+
+154. (404)Which filter circuit configuration is used primarily in high current applications?
+
+a. Inductive.
+b. L-section.*
+c. Capacitive.
+d. Pi-section.
+
+155. (405)What form does a regulator usually take to stabilize the output voltage of a rectifier?
+
+a. Parallel network with fixed current.
+b. Fixed resistance in parallel with the load.
+c. Variable resistance in parallel with the load.
+d. Variable resistance in series with the output.*
+
+156. (405)A zener diode is used in voltage regulators because it will maintain a constant voltage drop
+
+a. when forward biased.
+b. when input voltage is large.
+c. under varying current conditions.*
+d. under varying frequency applications.
+
+157. (405)The series regulator circuit contains a
+
+a. bridge element, control element, and sensing element.
+b. control element, reference element, and series element.
+c. reference element, bridge element, and sensing element.
+d. control element, sensing element, and reference element.*
+
+158. (406)Which circuit could be used to convert variable voltages into logic signals that can be processed by a digital computer for testing?
+
+a. A/D.*
+b. D/A.
+c. Varicap.
+d. Exclusive OR.
+
+159. (406)This A/D converter can use the divide-and-conquer method or a simple counter in its conversion process.
+
+a. Ramp.
+b. Flash.
+c. Three-phase.
+d. Approximation.*
+
+160. (406)What type of A/D converter is basically an indirect method of converting time?
+
+a. Ramp.*
+b. Flash.
+c. Hybrid.
+d. Approximation.
+
+161. (407)When keyed by the synchronizer, what component produces short, powerful bursts of RF energy?
+
+a. Receiver.
+b. Antenna.
+c. Transmitter.*
+d. Power supply.
+
+162. (407)What does the receiver use to produce the intermediate frequency?
+
+a. Oscillators.
+b. Transmitter.
+c. Heterodyning.*
+d. Frequency Shift.
+
+163. (407)The intermediate frequency produced by a radar receiver is the
+
+a. echo frequency.
+b. local oscillator "beat" frequency.
+c. sum of the echo frequency and local oscillator "beat" frequency.
+d. difference between the echo frequency and the local oscillator "beat" frequency.*
+
+164. (408)The two dimensions that must be considered when determining radar target direction are
+
+a. time and distance.
+b. location and speed.
+c. direction and speed.
+d. azimuth and elevation.*
+
+165. (408)Ordinary AM signals consist of a carrier signal and
+
+a. one sideband signal.
+b. two sideband signals.*
+c. three sideband signals.
+d. four sideband signals.
+
+166. (409)One of the principal advantages of a waveguide over a two-wire system is the waveguide has
+
+a. no risk of energy leaks.
+b. greater frequency range.
+c. greater power-handling capability.*
+d. no problem using frequencies below 3,000 MHz.
+
+167. (409)Waveguides are impractical at any frequency lower than
+
+a. 1,000 kHz.
+b. 20 MHz.
+c. 1,000 MHz.
+d. 3,000 MHz*
+
+168. (410)Walking across a carpet can generate a static charge as high as
+
+a. 5,000 volts.
+b. 15,000 volts
+c. 25,000 volts.
+d. 35,000 volts*
+
+169. (410)Which class of ESDS components has a sensitivity range of less than or equal to 4,000 volts but more than 1,000 volts?
+
+a. Class 1.
+b. Class 2.*
+c. Class 3.
+d. Class 4.
+
+170. (410)When an LRU malfunctions due to ESDS related failures in the aircraft, but when checked out in the shop on numerous occasions doesn't duplicate the malfunction, the type of failure is identified as
+
+a. soft.
+b. total.
+c. delayed.
+d. intermittent*
+
+171. (410)What is the reason for having a minimum 250,000 92 resistor in the ground line for ESD equipment?
+
+a. To prevent personal injury.*
+b. To allow you to work without the use of a wrist strap.
+c. So you can work on energized equipment without hazard.
+d. So that current is distributed between you and the equipment.
+
+172. (411)Substances having a large number of free electrons are called
+
+a. stable.
+b. insulators.
+c. conductors*
+d. semiconductors.
+
+173. (411)What is meant by the negative temperature coefficient of a semiconductor?
+
+a. That the temperature will not affect the resistance of the semiconductor.
+b. As temperature increases, the resistance of the semiconductor decreases.*
+c. As temperature increases, the resistance of the semiconductor increases.
+d. As temperature increases or decreases, the resistance will increase or decrease respectively.
+
+174. (411)To forward bias a P-N junction, you would connect the positive lead of the battery to the
+
+a. P-type material, which would increase the barrier potential.
+b. P-type material, which would decrease the barrier potential.*
+c. N-type material, which would increase the barrier potential.
+d. N-type material, which would decrease the barrier potential.
+
+175. (412)The two basic types of digital integrated circuits are
+
+a. nonstorage and gates.
+b. storage and flip-flops.
+c. registers and flip-flops.
+d. nonstorage and storage.*
+
+176. (412)What type of integrated circuit (IC) is an operational amplifier?
+
+a. Linear.*
+b. Power.
+c. Digital.
+d. Interface.
+
+177. (412)Interface ICs have which type of inputs and outputs?
+
+a. Linear only.
+b. Digital only.
+c. Analog or linear.
+d. Digital or analog.*
+
+178. (413)The three basic parts of numbering systems are
+
+a. place values, a point, and a radix.*
+b. the place holder, point, and radix.
+c. a point, place value, and place holder.
+d. a radix, place value, and place holders.
+
+179. (413)The fractional and integral portions of a binary number are separated by the
+
+a. radix.
+b. exponent.
+c. binary point.*
+d. decimal point.
+
+180. (413)Which number system was adopted to simplify and standardize terminology?
+
+a. Hexidecimal.
+b. Decimal.
+c. Binary.
+d. Metric.*
+
+181. (414)The zero (0) in the decimal numbering system
+
+a. serves as a place holder.*
+b. separates whole numbers from fractions.
+c. indicates the column which is being multiplied.
+d. indicates how many times the digit is multiplied.
+
+182. (414)The integral portion of the number 305.84 (10) is
+
+a. 3.
+b. 84.
+c. 305.*
+d. (10).
+
+183. (414)In the number 305.84 (10), the numeral 4 represents the
+
+a. LSD.*
+b. MSD.
+c. Radix.
+d. Fractional portion.
+
+184. (415)The number 101 (2) represents the
+
+a. hexadecimal numbering system.
+b. decimal numbering system.
+c. binary numbering system.*
+d. octal numbering system.
+
+185. (415)What happens to the power value when the exponent in the binary numbering system is increased by 1?
+
+a. Halved.
+b. Doubled.*
+c. Tripled.
+d. Unchanged.
+
+186. (416)Add 1010 (2) to 11 (2)
+
+a. 1101 (2).*
+b. 1011 (2).
+c. 101011 (2).
+d. 111010 (2).
+
+187. (416)Subtract 101 (2) from 1000 (2)
+
+a. 0101 (2).
+b. 0011 (2).*
+c. 1101 (2)
+d. 0001 (2).
+
+188. (417)The major difference between the octal, decimal, and binary numbering systems is the
+
+a. base.*
+b. place holder.
+c. integral portion.
+d. fractional portion.
+
+189. (417)The radix of the octal numbering system is
+
+a. 2.
+b. 8.*
+c. 10.
+d. 16.
+
+190. (417)Which numbers could not represent an octal number?
+
+a. 27 (8).
+b. 47 (8).
+c. 87 (8).*
+d. 107 (8).
+
+191. (418)Add 16 (8) to 14 (8)
+
+a. 26 (8).
+b. 20 (8).
+c. 30 (8).
+d. 32 (8).*
+
+192. (418)Subtract 34 (8) from 63 (8)
+
+a. 26(8).
+b. 27 (8).*
+c. 36 (8).
+d. 37 (8).
+
+193. (419)The radix of the hexadecimal system is
+
+a. 2.
+b. 8.
+c. 10.
+d. 16.*
+
+194. (419)Hexidecimal numbers are preceded by
+
+a. the symbol X'.*
+b. quotation marks.
+c. either the symbol Z' or quotation marks.
+d. either the negative or positive sign, depending on the value of the number.
+
+195. (420)Add ADA5 to 10AF
+
+a. AE54.
+b. AF54.
+c. BE54.*
+d. BF54.
+
+196. (420)Subtract 1F88 from OFFF
+
+a. E79.
+b. F79.
+c. E80.
+d. F89.*
+
+197. (421)Convert the decimal number 1590 to BCD
+
+a. 0010110010000.
+b. 1010110010000.*
+c. 00010001000.
+d. 10010001000.
+
+198. (421)Convert BCD 11110000101.0100011 to its decimal equivalent
+
+a. 715.26.
+b. 715.46.
+c. 785.26.
+d. 785.46.*
+
+199. (422)Which logic gate function produces a logic high output if either or both inputs are logic highs
+
+a. OR.*
+b. AND.
+c. NOR.
+d. Exclusive OR.
+
+200. (422)What function does a J-K flip-flop perform (if any) when both J and K inputs are high and a clock pulse is used to trigger the flip-flop?
+
+a. Q is locked high.
+b. Q is locked low.
+c. This condition is not allowed.
+d. Performs a divide-by-2 function.*
+
+201. (423)The maximum count of a four-stage binary counter is
+
+a. 4.
+b. 8.
+c. 16.*
+d. 32.
+
+202. (423)Which device is capable of receiving, rearranging, and retaining binary data?
+
+a. Storage register.
+b. Decade counter.
+c. Shift register.*
+d. Memory IC.
+
+203. (424)Which function does the symbol * stand for in a Boolean equation?
+
+a. Addition.
+b. Logical OR.
+c. Logical AND.*
+d. Multiplication.
+
+204. (425)Which circuit receives a binary input signal and develops a variable voltage proportional to the sum of the binary weights of the input?
+
+a. A/D.
+b. D/A.*
+c. Varicap.
+d. Exclusive OR.
+
+205. (425)What type of D/A circuit provides the accuracy of ICs and the increased power handling capabilities of discrete components?
+
+a. Measurement DAC.
+b. IC matrix DAC.
+c. Variable DAC.
+d. Hybrid DAC.*
+
+206. (426)The control section of a microcomputer does not
+
+a. issue the control signals that cause the transfer and/or manipulation of the data stored inmemory.
+b. receive inputs from other sections of the microcomputer, which in turn, uses them to perform math and logical functions.*
+c. perform numerous "instruction fetches" to decode bit patterns and generate control signals.
+d. determine if the normal flow of the program should be altered by reading the contents of the flag register in the arithmetic/logic unit.
+
+207. (426)The arithmetic/logic unit (ALU) section in a digital computer
+
+a. provides control over storage devices.
+b. manipulates information.
+c. perfroms math functions.*
+d. stores information.
+
+208. (426)Enabling the microcomputer to send information to the operator or any other device is the primary job of the
+
+a. output section.*
+b. control section.
+c. memory section.
+d. Arithmetic/logic unit.
+
+209. (427)Which memory device is also referred to as a read/write memory?
+
+a. RAM*
+b. ROM.
+c. PROM.
+d. EPROM.
+
+210. (427)Which memory device has its programming built into it?
+
+a. RAM.
+b. ROM.*
+c. PROM.
+d. EPROM.

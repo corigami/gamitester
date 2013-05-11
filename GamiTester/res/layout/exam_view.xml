@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".ShowQuestionsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/textViewExamTitle"
+            android:layout_width="170dp"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:longClickable="false"
+            android:text="@string/examTitle" />
+
+        <TextView
+            android:id="@+id/textViewSectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/questionSection" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/questionText_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:clickable="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:text="@string/questionQuestion"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/editTextAnswerA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="selectAOnClick"
+        android:text="@string/questionAnswerA"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/editTextAnswerB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="selectBOnClick"
+        android:text="@string/questionAnswerB"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/editTextAnswerC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="selectCOnClick"
+        android:text="@string/questionAnswerC"
+        android:textSize="12sp"  />
+
+    <TextView
+        android:id="@+id/editTextAnswerD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="selectDOnClick"
+        android:text="@string/questionAnswerD"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5" >
+
+        <Button
+            android:id="@+id/buttonExamViewPrevious"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="nextButtonOnClick"
+            android:text="@string/buttonNext" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="prevButtonOnClick"
+            android:text="@string/buttonPrevious" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

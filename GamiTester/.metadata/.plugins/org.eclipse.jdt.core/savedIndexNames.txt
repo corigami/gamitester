@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+E:\Public\Documents\Google Drive\Google Code\Android_repo\GamiTester\.metadata\.plugins\org.eclipse.jdt.core
