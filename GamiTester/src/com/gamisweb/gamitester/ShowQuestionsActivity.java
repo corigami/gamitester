@@ -1,9 +1,6 @@
 package com.gamisweb.gamitester;
 
-
-//import com.gamisweb.gamitester.R;
 import java.util.ArrayList;
-
 import com.gamisweb.utility.*;
 import com.gamisweb.gamitester.QInfoAdapter;
 import android.R.color;
@@ -27,7 +24,6 @@ public class ShowQuestionsActivity extends Activity {
 	public String message ="";
 	private TextView title;
 	private TextView section;
-	//private TextView questionNum;
 	private TextView questionText;
 	private TextView answerA;
 	private TextView answerB;
@@ -90,10 +86,10 @@ public class ShowQuestionsActivity extends Activity {
 		title.setText("Exam: " +message + "#" +questionIndex);
 		section.setText("Section:" + qInfo.getSection());
 		questionText.setText(qInfo.getText());
-		answerA.setText(qInfo.getChoice(0));
-		answerB.setText(qInfo.getChoice(1));
-		answerC.setText(qInfo.getChoice(2));
-		answerD.setText(qInfo.getChoice(3));
+		answerA.setText("A) "+ qInfo.getChoice(0));
+		answerB.setText("B) "+ qInfo.getChoice(1));
+		answerC.setText("C) "+ qInfo.getChoice(2));
+		answerD.setText("D) "+ qInfo.getChoice(3));
 	}
 
 	private void displayFinalReport(){
@@ -119,8 +115,6 @@ public class ShowQuestionsActivity extends Activity {
 		}
 
 		 */
-
-
 	}
 
 	public void nextButtonOnClick(View view){
@@ -179,7 +173,6 @@ public class ShowQuestionsActivity extends Activity {
 		alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int whichButton) {
 				numberOfQuestions = Integer.parseInt(input.getText().toString());
-				// Do something with value!
 				if(numberOfQuestions >cursor.getCount())
 					numberOfQuestions = cursor.getCount();
 				generateQuestionArray();
@@ -192,10 +185,8 @@ public class ShowQuestionsActivity extends Activity {
 				// Canceled.
 			}
 
-
 		});
 		alert.show();
 
 	}
-
 }

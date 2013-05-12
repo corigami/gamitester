@@ -11,18 +11,18 @@ import android.widget.TextView;
 
 
 public class QInfoAdapter extends ArrayAdapter<QInfo> {
-	TextView section;
-	TextView text;
-	TextView answerA;
-	TextView answerB;
-	TextView answerC;
-	TextView answerD;
+	private TextView section;
+	private TextView text;
+	private TextView answerA;
+	private TextView answerB;
+	private TextView answerC;
+	private TextView answerD;
 
 	// declaring our ArrayList of items
 	private ArrayList<QInfo> objects;
 
 	/* here we must override the constructor for ArrayAdapter
-	* the only variable we care about now is ArrayList<Item> objects,
+	* the only variable we care about now is ArrayList<Qinfo> objects,
 	* because it is the list of objects we want to display.
 	*/
 	public QInfoAdapter(Context context, int textViewResourceId, ArrayList<QInfo> objects) {
@@ -75,25 +75,25 @@ public class QInfoAdapter extends ArrayAdapter<QInfo> {
 				section.setText(i.getSection());
 			}
 			if (text != null){
-				text.setText(i.getText());
+				text.setText(i.getNumber() + ":  " + i.getText());
 
 			if (answerA != null){
-				answerA.setText(i.getChoice(0));
+				answerA.setText("A) "+i.getChoice(0));
 				if(i.getMarked()==0) answerA.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.holo_red_light));
 				if(i.getCorrect()==0) answerA.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.holo_green_light));
 			}
 			if (answerB != null){
-				answerB.setText(i.getChoice(1));
+				answerB.setText("B) "+i.getChoice(1));
 				if(i.getMarked()==1) answerB.setBackgroundColor(answerB.getContext().getResources().getColor(R.color.holo_red_light));
 				if(i.getCorrect()==1) answerB.setBackgroundColor(answerB.getContext().getResources().getColor(R.color.holo_green_light));
 			}
 			if (answerC != null){
-				answerC.setText(i.getChoice(2));
+				answerC.setText("C) "+i.getChoice(2));
 				if(i.getMarked()==2) answerC.setBackgroundColor(answerC.getContext().getResources().getColor(R.color.holo_red_light));
 				if(i.getCorrect()==2) answerC.setBackgroundColor(answerC.getContext().getResources().getColor(R.color.holo_green_light));
 			}
 			if (answerD != null){
-				answerD.setText(i.getChoice(3));
+				answerD.setText("D) "+i.getChoice(3));
 				if(i.getMarked()==3) answerD.setBackgroundColor(answerD.getContext().getResources().getColor(R.color.holo_red_light));
 				if(i.getCorrect()==3) answerD.setBackgroundColor(answerD.getContext().getResources().getColor(R.color.holo_green_light));
 			}

@@ -5,12 +5,26 @@ import com.gamisweb.gamitester.R;
 import com.gamisweb.utility.*;
 import java.util.ArrayList;
 import android.os.Bundle;
+<<<<<<< HEAD
+=======
+//import android.util.Log;
+>>>>>>> refs/heads/clean_code_again
 import android.view.View;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.database.Cursor;
+<<<<<<< HEAD
+=======
+//import android.view.Menu;
+>>>>>>> refs/heads/clean_code_again
 import android.widget.AdapterView;
+<<<<<<< HEAD
+=======
+//import android.widget.Button;
+//import android.widget.EditText;
+//import android.widget.LinearLayout;
+>>>>>>> refs/heads/clean_code_again
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
