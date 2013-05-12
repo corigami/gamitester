@@ -47,21 +47,18 @@ public class SelectExamActivity extends Activity {
 				R.id.examAuthor
 				};
 
-		// create the adapter using the cursor pointing to the desired data 
-		//as well as the layout information
+		// create the adapter using the cursor pointing to the desired data as well as the layout information
 		ListView examListView = (ListView) findViewById(R.id.exam_listview);
-		dataAdapter = new SimpleCursorAdapter(this, R.layout.exam_list_entries_layout, cursor, columns, to, 0); //swapped null for cursor
+		dataAdapter = new SimpleCursorAdapter(this, R.layout.exam_list_entries_layout, cursor, columns, to, 0);
 		examListView.setAdapter(dataAdapter); 		  // Assign adapter to ListView
 
 		examListView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> listView, View view, 
 					int position, long id) {
-				// Get the cursor, positioned to the corresponding row in the result set
-				Cursor cursor = (Cursor) listView.getItemAtPosition(position);
-
-				// Get the selected exam from this row in the database.
-				String examSelected = cursor.getString(cursor.getColumnIndexOrThrow("Title"));
+			
+				Cursor cursor = (Cursor) listView.getItemAtPosition(position); 	// Get the cursor, positioned to the corresponding row in the result set
+				String examSelected = cursor.getString(cursor.getColumnIndexOrThrow("Title")); // Get the selected exam from this row in the database.
 				System.out.println(examSelected);
 				Intent returnIntent = new Intent();
 				returnIntent.putExtra("result",examSelected);
