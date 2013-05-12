@@ -1,17 +1,6 @@
 package com.gamisweb.utility;
 import java.io.*;
-import android.content.res.AssetManager;
-import android.database.Cursor;
-
 import java.util.*;
-
-
-
-
-//import javax.swing.*;
-
-
-
 
 public class Io
 {
