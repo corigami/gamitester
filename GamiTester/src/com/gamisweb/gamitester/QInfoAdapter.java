@@ -75,7 +75,7 @@ public class QInfoAdapter extends ArrayAdapter<QInfo> {
 				section.setText(i.getSection());
 			}
 			if (text != null){
-				text.setText(i.getNumber() + ":  " + i.getText());
+				text.setText((i.getNumber()+1) + ":  " + i.getText());
 
 			if (answerA != null){
 				answerA.setText("A) "+i.getChoice(0));

@@ -57,6 +57,7 @@ public class ShowQuestionsActivity extends Activity {
 		examHelper.open();	 
 		cursor = examHelper.fetchQuestions(message);
 		examHelper.close();
+		setTitle(message);
 		questionPrompt();
 
 	}
@@ -83,7 +84,7 @@ public class ShowQuestionsActivity extends Activity {
 		if(qInfo.getMarked()==1)answerB.setBackgroundColor(getResources().getColor(R.color.holo_blue_bright));
 		if(qInfo.getMarked()==2)answerC.setBackgroundColor(getResources().getColor(R.color.holo_blue_bright));
 		if(qInfo.getMarked()==3)answerD.setBackgroundColor(getResources().getColor(R.color.holo_blue_bright));
-		title.setText("Exam: " +message + "#" +questionIndex);
+		title.setText("Question #" + (questionIndex + 1));
 		section.setText("Section:" + qInfo.getSection());
 		questionText.setText(qInfo.getText());
 		answerA.setText("A) "+ qInfo.getChoice(0));
@@ -94,6 +95,7 @@ public class ShowQuestionsActivity extends Activity {
 
 	private void displayFinalReport(){
 		setContentView(R.layout.exam_listview_layout);
+		setTitle(message);
 		for(int i=0;i<(questionArray.size());i++)
 
 		{

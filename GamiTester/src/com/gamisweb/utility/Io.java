@@ -25,7 +25,7 @@ public class Io
 			//retrieves correct number, question text and generates random order for question answers 
 			ranQInfo.setSection(tempQInfo.getSection());
 			ranQInfo.setText(tempQInfo.getText());
-			ranQInfo.setNumber(tempQInfo.getNumber());
+			ranQInfo.setNumber(x);
 			for (int i = 0; i < 4; i++)
 			{
 				int random;

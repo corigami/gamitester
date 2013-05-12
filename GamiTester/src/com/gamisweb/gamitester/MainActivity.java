@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
@@ -24,8 +25,9 @@ public class MainActivity extends Activity {
 	private int count=0;
 	private TextView homeScreenLayout1;
 	private String homeScreenText="This is the homescreen text";
-	private String selectedExam;
+	private String selectedExam = "";
 	private SimpleCursorAdapter dataAdapter;
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class MainActivity extends Activity {
 		super.onResume();
 		if(!consent) setContentView(R.layout.splash_screen);
 		else setContentView(R.layout.activity_main);
+
 	}
 
 	@Override
@@ -68,6 +71,9 @@ public class MainActivity extends Activity {
 	public void setActivityMainLayout(View view){
 		consent = true;
 		setContentView(R.layout.activity_main);
+		Button showQuestions = (Button) findViewById(R.id.button4);
+		if (selectedExam=="") showQuestions.setVisibility(View.GONE);
+		else showQuestions.setVisibility(View.VISIBLE);
 	}	
 
 	public void reviewButtonOnClick(View view) { 	//creates listener onClick to tell the program what to do when button1 is clicked.

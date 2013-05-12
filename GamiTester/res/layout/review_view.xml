@@ -11,17 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="5"
         android:weightSum="10" >
-
-        <TextView
-            android:id="@+id/reviewExamTitle"
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:clickable="false"
-            android:focusable="false"
-            android:longClickable="false"
-            android:text="@string/examTitle" />
 
         <TextView
             android:id="@+id/reviewSection"
