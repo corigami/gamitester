@@ -80,26 +80,26 @@ public class Io
 			{
 				QInfo qTemp = new QInfo();
 				temp = textFile.readLine();
-				System.out.println(temp);
+			//	System.out.println(temp);
 				int x = 0;
-				System.out.println(x);
+				//System.out.println(x);
 				while ( (temp != null) && !temp.equalsIgnoreCase(""))
 				{
 					if (x == 0)
 					{
 						qTemp.setNumber(Integer.parseInt(temp.substring(0, temp.indexOf("."))));
-						System.out.println(qTemp.getNumber());
+				//		System.out.println(qTemp.getNumber());
 						qTemp.setSection(temp.substring(temp.indexOf("(") + 1,
 								temp.indexOf(")")));
-						System.out.println(qTemp.getSection());
+				//		System.out.println(qTemp.getSection());
 						qTemp.setText(temp.substring(temp.indexOf(")") + 1));
 					}
 					else
 						qTemp.setText(qTemp.getText() + " " + temp);
-					System.out.println(qTemp.getText());
+				//	System.out.println(qTemp.getText());
 
 					temp=textFile.readLine();
-					System.out.println(temp);
+				//	System.out.println(temp);
 
 					x++;
 				}

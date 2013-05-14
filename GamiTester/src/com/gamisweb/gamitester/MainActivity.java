@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import android.os.Bundle;
 import android.view.View;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.database.Cursor;
@@ -27,6 +28,7 @@ public class MainActivity extends Activity {
 	private String homeScreenText="This is the homescreen text";
 	private String selectedExam = "";
 	private SimpleCursorAdapter dataAdapter;
+	private ExamDBHelper dbUtil;
 
 
 	@Override
@@ -45,6 +47,8 @@ public class MainActivity extends Activity {
 		super.onResume();
 		if(!consent) setContentView(R.layout.splash_screen);
 		else setContentView(R.layout.activity_main);
+		System.out.println(getApplicationContext().getFilesDir());
+		
 
 	}
 
@@ -104,12 +108,12 @@ public class MainActivity extends Activity {
 		setHomeScreenLayout1("You sent the list of Exams to the log");
 		ExamDBHelper examHelper = new ExamDBHelper(this);
 		examHelper.open();
-		examHelper.deleteLocalDatabase();
+		examHelper.deleteLocalDatabase(selectedExam);
 		examHelper.close();	
 		count=0;
 	}
 	private void createDatabase()throws IOException{
-		ExamDBHelper dbUtil = new ExamDBHelper(this);
+		dbUtil = new ExamDBHelper(this);
 		AssetManager aM = this.getAssets();
 		InputStream fileToRead = aM.open("set1.txt");
 		InputStreamReader inputStreamReader = new InputStreamReader(fileToRead);
@@ -118,13 +122,16 @@ public class MainActivity extends Activity {
 		QInfo questionStore = new QInfo();
 		dbUtil.open();
 		int i;
+		String examTitle = "examnum_" + count;
+		dbUtil.createExam(examTitle, "Author# "+count);
+		dbUtil.createNewExamTable(examTitle);
 		for(i=0; i<questionArray.size(); i++)
 		{
 			questionStore=questionArray.get(i);
-			dbUtil.createQuestion("Exam# "+count,questionStore.getSection(), questionStore.getText() , questionStore.getChoice(0), questionStore.getChoice(1), questionStore.getChoice(2),
-					questionStore.getChoice(3), Integer.toString(questionStore.getCorrect()));
+			dbUtil.createQuestion(examTitle,questionStore.getSection(), questionStore.getText() , questionStore.getChoice(0), questionStore.getChoice(1), questionStore.getChoice(2),
+					questionStore.getChoice(3), Integer.toString(questionStore.getCorrect()),Integer.toString(questionStore.getWeight()));
 		}			
-		dbUtil.createExam("Exam# "+count, "Author# "+count);
+
 		dbUtil.close();
 		setHomeScreenLayout1("You added Exam #" + count + ", by Author #" + count + " to the database");
 		count++;
@@ -177,7 +184,6 @@ public class MainActivity extends Activity {
 		ExamDBHelper examHelper = new ExamDBHelper(this);
 		examHelper.open();	 
 		Cursor cursor = examHelper.fetchAllExams();
-
 		
 		//Creates a new temp database if none exists
 		if(cursor.getCount()==0){

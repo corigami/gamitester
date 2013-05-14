@@ -16,6 +16,7 @@ public class QInfo implements Serializable
         private int weight=0;
 
 
+
 	public QInfo()
 	{
         text = "";
@@ -26,12 +27,13 @@ public class QInfo implements Serializable
                 }
 
 	}
-	public QInfo( String t, String[] a, int m, int n, String s){
+	public QInfo( String t, String[] a, int m, int n, String s,int w){
 		this.text = t;
 		this.choice = a;
 		this.marked = m;
 		this.number = n;
 		this.section = s;
+		this.weight = w;
 	}
 	public QInfo copy(QInfo toCopy){
 		QInfo newCopy = new QInfo();
@@ -39,6 +41,8 @@ public class QInfo implements Serializable
 		newCopy.correct = toCopy.correct;
 		newCopy.number = toCopy.number;
 		newCopy.section = toCopy.section;
+		newCopy.weight = toCopy.weight;
+		
 		for(int x = 0;x < 4;x++)
         {
 			newCopy.choice[x] = toCopy.choice[x];
@@ -73,6 +77,12 @@ public class QInfo implements Serializable
         {
           return text;
           }
+    	public int getWeight() {
+			return weight;
+		}
+		public void setWeight(int w) {
+			weight = w;
+		}
         public void printQuestion()
         {
 

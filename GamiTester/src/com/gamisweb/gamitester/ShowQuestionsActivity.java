@@ -53,17 +53,21 @@ public class ShowQuestionsActivity extends Activity {
 		answerD = (TextView)findViewById(R.id.editTextAnswerD);
 		message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 		tempQInfo = new QInfo();
-		ExamDBHelper examHelper = new ExamDBHelper(this);
+		examHelper = new ExamDBHelper(this);
 		examHelper.open();	 
-		cursor = examHelper.fetchQuestions(message);
-		examHelper.close();
+		cursor = examHelper.fetchAllQuestions(message);
+		System.out.println("message=" + message);
+		System.out.println("Cursor Columns :" + cursor.getColumnCount() +"  Cursor Count :" + cursor.getCount());
 		setTitle(message);
+		System.out.println(cursor.getString(2));
 		questionPrompt();
+		examHelper.close();
 
 	}
 	private void generateQuestionArray(){
 		for(int x=0;x < cursor.getCount();x++){
-			for(int i=2;i<cursor.getColumnCount()-1;){
+			System.out.println("Cursor Columns :" + cursor.getColumnCount() +"  Cursor Count :" + cursor.getCount());
+			for(int i=1;i<(cursor.getColumnCount()-1);){
 				tempQInfo.setSection(cursor.getString(i++));
 				tempQInfo.setText(cursor.getString(i++));
 				tempQInfo.setChoice(0, cursor.getString(i++));
@@ -71,6 +75,7 @@ public class ShowQuestionsActivity extends Activity {
 				tempQInfo.setChoice(2, cursor.getString(i++));
 				tempQInfo.setChoice(3, cursor.getString(i++));
 				tempQInfo.setCorrect(cursor.getInt(i++));
+				tempQInfo.setWeight(cursor.getInt(i++));
 			}
 			questionArray.add(tempQInfo.copy(tempQInfo));
 			cursor.moveToNext();

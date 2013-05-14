@@ -32,7 +32,7 @@ public class SelectExamActivity extends Activity {
 		ExamDBHelper examHelper = new ExamDBHelper(this);
 		examHelper.open();	 
 		Cursor cursor = examHelper.fetchAllExams();
-
+		examHelper.close();
 		@SuppressWarnings("static-access")
 		String[] columns = new String[]
 				{
