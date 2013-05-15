@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import android.os.Bundle;
 import android.view.View;
 import android.app.Activity;
-import android.content.Context;
+//import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.database.Cursor;

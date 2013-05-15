@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 
 public class QInfoAdapter extends ArrayAdapter<QInfo> {
-	private TextView section;
 	private TextView text;
 	private TextView answerA;
 	private TextView answerB;
@@ -55,7 +54,7 @@ public class QInfoAdapter extends ArrayAdapter<QInfo> {
 		 */
 		QInfo i = objects.get(position);
 
-		if (i != null) {
+
 
 			// This is how you obtain a reference to the TextViews.
 			// These TextViews are created in the XML files we defined.
@@ -73,36 +72,33 @@ public class QInfoAdapter extends ArrayAdapter<QInfo> {
 			// if not, assign some text!
 	//		if (section != null){
 	//			section.setText(i.getSection());
-		//	}
-			if (text != null){
+			
 				text.setText((i.getNumber()+1) + ")  ("+i.getSection()+ ")  " + i.getText());
 
-			if (answerA != null){
+
 				answerA.setText("A) "+i.getChoice(0));
 				if(i.getMarked()==0) answerA.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.holo_blue_light));
-				if(i.getCorrect()==0) answerA.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.holo_green_light));
-			}
-			if (answerB != null){
+				else if(i.getCorrect()==0) answerA.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.holo_green_light));
+				else answerA.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.white));
+			
+
 				answerB.setText("B) "+i.getChoice(1));
 				if(i.getMarked()==1) answerB.setBackgroundColor(answerB.getContext().getResources().getColor(R.color.holo_blue_light));
-				if(i.getCorrect()==1) answerB.setBackgroundColor(answerB.getContext().getResources().getColor(R.color.holo_green_light));
-			}
-			if (answerC != null){
+				else if(i.getCorrect()==1) answerB.setBackgroundColor(answerB.getContext().getResources().getColor(R.color.holo_green_light));
+				else answerB.setBackgroundColor(answerB.getContext().getResources().getColor(R.color.white));	
+
 				answerC.setText("C) "+i.getChoice(2));
 				if(i.getMarked()==2) answerC.setBackgroundColor(answerC.getContext().getResources().getColor(R.color.holo_blue_light));
-				if(i.getCorrect()==2) answerC.setBackgroundColor(answerC.getContext().getResources().getColor(R.color.holo_green_light));
-			}
-			if (answerD != null){
+				else if(i.getCorrect()==2) answerC.setBackgroundColor(answerC.getContext().getResources().getColor(R.color.holo_green_light));
+				else answerC.setBackgroundColor(answerC.getContext().getResources().getColor(R.color.white));
+
 				answerD.setText("D) "+i.getChoice(3));
 				if(i.getMarked()==3) answerD.setBackgroundColor(answerD.getContext().getResources().getColor(R.color.holo_blue_light));
-				if(i.getCorrect()==3) answerD.setBackgroundColor(answerD.getContext().getResources().getColor(R.color.holo_green_light));
-			}
-
-		
-		}
+				else if(i.getCorrect()==3) answerD.setBackgroundColor(answerD.getContext().getResources().getColor(R.color.holo_green_light));
+				else answerD.setBackgroundColor(answerD.getContext().getResources().getColor(R.color.white));
 
 		// the view must be returned to our activity
-		}
+		
 		return v;
 
 

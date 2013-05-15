@@ -3,16 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:cacheColorHint="#0000"
     android:gravity="top|center"
     android:orientation="vertical"
     android:showDividers="end"
     android:weightSum="100"
     tools:context=".ShowQuestionsActivity" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="10" >
+
 <!--  
         <TextView
             android:id="@+id/reviewSection"
@@ -20,8 +18,6 @@
             android:layout_height="match_parent"
             android:text="@string/questionSection" />
 -->
-    </LinearLayout>
-
     <TextView
         android:id="@+id/reviewText"
         android:layout_width="match_parent"
@@ -29,12 +25,9 @@
         android:layout_weight="10"
         android:clickable="false"
         android:fadingEdge="horizontal"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        android:scrollbars="vertical"
         android:text="@string/questionQuestion"
         android:textSize="16sp"
-        android:textStyle="normal"
-        android:typeface="normal" />
+ />
 
     <TextView
         android:id="@+id/reviewAnswerA"
@@ -42,7 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="@string/questionAnswerA"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:cacheColorHint="#0000" />
 
     <TextView
         android:id="@+id/reviewAnswerB"
@@ -50,7 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="@string/questionAnswerB"
-        android:textSize="12sp" />
+        android:textSize="12sp" 
+        android:cacheColorHint="#0000"/>
 
     <TextView
         android:id="@+id/reviewAnswerC"
@@ -58,7 +53,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="@string/questionAnswerC"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:cacheColorHint="#0000" />
 
     <TextView
         android:id="@+id/reviewAnswerD"
@@ -66,11 +62,13 @@
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="@string/questionAnswerD"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:cacheColorHint="#0000" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:cacheColorHint="#0000"
          />
 
 </LinearLayout>
