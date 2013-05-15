@@ -23,6 +23,8 @@ public class ShowQuestionsActivity extends Activity {
 	public SimpleCursorAdapter dataAdapter;
 	public String message ="";
 	private TextView title;
+	private TextView reviewTitle;
+	private TextView reviewResults;
 	private TextView section;
 	private TextView questionText;
 	private TextView answerA;
@@ -56,17 +58,13 @@ public class ShowQuestionsActivity extends Activity {
 		examHelper = new ExamDBHelper(this);
 		examHelper.open();	 
 		cursor = examHelper.fetchAllQuestions(message);
-		System.out.println("message=" + message);
-		System.out.println("Cursor Columns :" + cursor.getColumnCount() +"  Cursor Count :" + cursor.getCount());
 		setTitle(message);
-		System.out.println(cursor.getString(2));
 		questionPrompt();
 		examHelper.close();
 
 	}
 	private void generateQuestionArray(){
 		for(int x=0;x < cursor.getCount();x++){
-			System.out.println("Cursor Columns :" + cursor.getColumnCount() +"  Cursor Count :" + cursor.getCount());
 			for(int i=1;i<(cursor.getColumnCount()-1);){
 				tempQInfo.setSection(cursor.getString(i++));
 				tempQInfo.setText(cursor.getString(i++));
@@ -99,7 +97,7 @@ public class ShowQuestionsActivity extends Activity {
 	}
 
 	private void displayFinalReport(){
-		setContentView(R.layout.exam_listview_layout);
+		setContentView(R.layout.results_listview_layout);
 		setTitle(message);
 		for(int i=0;i<(questionArray.size());i++)
 
@@ -108,10 +106,17 @@ public class ShowQuestionsActivity extends Activity {
 				missedQuestion.add(questionArray.get(i));
 
 		}
-
-		qAdapter = new QInfoAdapter(this,R.layout.activity_review_missed, missedQuestion);
-		ListView reviewMissed = (ListView) findViewById(R.id.exam_listview);
+		
+		qAdapter = new QInfoAdapter(this,R.id.results_listview, missedQuestion);
+		ListView reviewMissed = (ListView) findViewById(R.id.results_listview);
 		reviewMissed.setAdapter(qAdapter);
+		reviewTitle = (TextView) findViewById(R.id.results_listview_TV0);
+		reviewResults = (TextView) findViewById(R.id.results_listview_TV2);
+		int missed = missedQuestion.size();
+		reviewTitle.setText("Correct: " + Integer.toString((numberOfQuestions-missed))+"    Missed: "+ Integer.toString(missed));
+		float percent = (numberOfQuestions-missed)*100f/ numberOfQuestions;
+		reviewResults.setText(Float.toString(percent)+"%");
+
 
 		/*
 		@Override

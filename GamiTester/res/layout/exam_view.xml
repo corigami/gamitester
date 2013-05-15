@@ -34,7 +34,7 @@
         android:id="@+id/questionText_TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="50"
+        android:layout_weight="39.54"
         android:clickable="false"
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:scrollbars="vertical"
@@ -97,7 +97,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentTop="false"
             android:onClick="nextButtonOnClick"
             android:text="@string/buttonNext" />
 
@@ -105,8 +105,9 @@
             android:id="@+id/button2"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentTop="false"
             android:onClick="prevButtonOnClick"
             android:text="@string/buttonPrevious" />
 

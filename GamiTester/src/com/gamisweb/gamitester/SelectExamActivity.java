@@ -59,7 +59,6 @@ public class SelectExamActivity extends Activity {
 			
 				Cursor cursor = (Cursor) listView.getItemAtPosition(position); 	// Get the cursor, positioned to the corresponding row in the result set
 				String examSelected = cursor.getString(cursor.getColumnIndexOrThrow("Title")); // Get the selected exam from this row in the database.
-				System.out.println(examSelected);
 				Intent returnIntent = new Intent();
 				returnIntent.putExtra("result",examSelected);
 				setResult(RESULT_OK,returnIntent);     

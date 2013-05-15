@@ -47,7 +47,6 @@ public class MainActivity extends Activity {
 		super.onResume();
 		if(!consent) setContentView(R.layout.splash_screen);
 		else setContentView(R.layout.activity_main);
-		System.out.println(getApplicationContext().getFilesDir());
 		
 
 	}
@@ -141,7 +140,6 @@ public class MainActivity extends Activity {
 	}
 	public void setHomeScreenLayout1(){
 		homeScreenLayout1=(TextView) findViewById(R.id.homeScreenTextView1);
-		System.out.println("you got this far");
 		homeScreenLayout1.setText(this.getHomeScreenText());
 		homeScreenLayout1.postInvalidate();	
 	}

@@ -43,7 +43,7 @@ public class QInfoAdapter extends ArrayAdapter<QInfo> {
 		// to inflate it basically means to render, or show, the view.
 		if (v == null) {
 			LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			v = inflater.inflate(R.layout.review_view, null);
+			v = inflater.inflate(R.layout.review_listview, null);
 		}
 
 		/*
@@ -60,7 +60,7 @@ public class QInfoAdapter extends ArrayAdapter<QInfo> {
 			// This is how you obtain a reference to the TextViews.
 			// These TextViews are created in the XML files we defined.
 
-			section = (TextView) v.findViewById(R.id.reviewSection);
+		//	section = (TextView) v.findViewById(R.id.reviewSection);
 			text = (TextView) v.findViewById(R.id.reviewText);
 			answerA = (TextView) v.findViewById(R.id.reviewAnswerA);
 			answerB = (TextView) v.findViewById(R.id.reviewAnswerB);
@@ -71,30 +71,30 @@ public class QInfoAdapter extends ArrayAdapter<QInfo> {
 
 			// check to see if each individual textview is null.
 			// if not, assign some text!
-			if (section != null){
-				section.setText(i.getSection());
-			}
+	//		if (section != null){
+	//			section.setText(i.getSection());
+		//	}
 			if (text != null){
-				text.setText((i.getNumber()+1) + ":  " + i.getText());
+				text.setText((i.getNumber()+1) + ")  ("+i.getSection()+ ")  " + i.getText());
 
 			if (answerA != null){
 				answerA.setText("A) "+i.getChoice(0));
-				if(i.getMarked()==0) answerA.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.holo_red_light));
+				if(i.getMarked()==0) answerA.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.holo_blue_light));
 				if(i.getCorrect()==0) answerA.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.holo_green_light));
 			}
 			if (answerB != null){
 				answerB.setText("B) "+i.getChoice(1));
-				if(i.getMarked()==1) answerB.setBackgroundColor(answerB.getContext().getResources().getColor(R.color.holo_red_light));
+				if(i.getMarked()==1) answerB.setBackgroundColor(answerB.getContext().getResources().getColor(R.color.holo_blue_light));
 				if(i.getCorrect()==1) answerB.setBackgroundColor(answerB.getContext().getResources().getColor(R.color.holo_green_light));
 			}
 			if (answerC != null){
 				answerC.setText("C) "+i.getChoice(2));
-				if(i.getMarked()==2) answerC.setBackgroundColor(answerC.getContext().getResources().getColor(R.color.holo_red_light));
+				if(i.getMarked()==2) answerC.setBackgroundColor(answerC.getContext().getResources().getColor(R.color.holo_blue_light));
 				if(i.getCorrect()==2) answerC.setBackgroundColor(answerC.getContext().getResources().getColor(R.color.holo_green_light));
 			}
 			if (answerD != null){
 				answerD.setText("D) "+i.getChoice(3));
-				if(i.getMarked()==3) answerD.setBackgroundColor(answerD.getContext().getResources().getColor(R.color.holo_red_light));
+				if(i.getMarked()==3) answerD.setBackgroundColor(answerD.getContext().getResources().getColor(R.color.holo_blue_light));
 				if(i.getCorrect()==3) answerD.setBackgroundColor(answerD.getContext().getResources().getColor(R.color.holo_green_light));
 			}
 
