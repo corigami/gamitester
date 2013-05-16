@@ -74,6 +74,7 @@ public class QInfoAdapter extends ArrayAdapter<QInfo> {
 	//			section.setText(i.getSection());
 			
 				text.setText((i.getNumber()+1) + ")  ("+i.getSection()+ ")  " + i.getText());
+				text.setBackgroundColor(answerA.getContext().getResources().getColor(R.color.white));
 
 
 				answerA.setText("A) "+i.getChoice(0));

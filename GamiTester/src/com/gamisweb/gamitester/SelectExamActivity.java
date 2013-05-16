@@ -28,6 +28,12 @@ public class SelectExamActivity extends Activity {
 		setContentView(R.layout.exam_listview_layout);
 		displayListView();
 	}
+	public void onStart(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+	}
+	protected void onResume() {
+		super.onResume();
+	}
 	private void displayListView() {
 		ExamDBHelper examHelper = new ExamDBHelper(this);
 		examHelper.open();	 

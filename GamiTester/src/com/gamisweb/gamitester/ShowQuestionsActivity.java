@@ -14,6 +14,7 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.NumberPicker;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
@@ -62,6 +63,12 @@ public class ShowQuestionsActivity extends Activity {
 		questionPrompt();
 		examHelper.close();
 
+	}
+	public void onStart(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+	}
+	protected void onResume() {
+		super.onResume();
 	}
 	private void generateQuestionArray(){
 		for(int x=0;x < cursor.getCount();x++){
@@ -177,14 +184,26 @@ public class ShowQuestionsActivity extends Activity {
 		alert.setTitle("Number of questions?");
 		alert.setMessage("How many questions would you like to test on? \n Max = "+ cursor.getCount());
 
-		// Set an EditText view to get user input 
-		final EditText input = new EditText(this);
-		input.setInputType(InputType.TYPE_CLASS_NUMBER);
-		alert.setView(input);
+		final NumberPicker numPick = new NumberPicker(ShowQuestionsActivity.this);
+		int countByFive = cursor.getCount()-(cursor.getCount()%5);
+		String[] nums = new String[countByFive/5];
+		int incrementByFive = 5;
+        for(int i=0; i<(countByFive/5);i++){
+               nums[i] = Integer.toString(incrementByFive);
+               incrementByFive=incrementByFive+5;
+        }
+        numPick.setMinValue(0);
+        numPick.setMaxValue(83);
+        numPick.setWrapSelectorWheel(true);
+        numPick.setDisplayedValues(nums);
+        if(countByFive<250)  numPick.setValue(countByFive/5); 
+        else numPick.setValue(9);
+        
+		alert.setView(numPick);
 
 		alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int whichButton) {
-				numberOfQuestions = Integer.parseInt(input.getText().toString());
+				numberOfQuestions = (numPick.getValue()+1)*5;
 				if(numberOfQuestions >cursor.getCount())
 					numberOfQuestions = cursor.getCount();
 				generateQuestionArray();
