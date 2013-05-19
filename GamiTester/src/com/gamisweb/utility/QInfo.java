@@ -42,11 +42,9 @@ public class QInfo implements Serializable
 		newCopy.number = toCopy.number;
 		newCopy.section = toCopy.section;
 		newCopy.weight = toCopy.weight;
-		
-		for(int x = 0;x < 4;x++)
-        {
-			newCopy.choice[x] = toCopy.choice[x];
-        }
+
+        //copies one array to another.
+        System.arraycopy(toCopy.choice, 0, newCopy.choice, 0, 4);
 
 		return newCopy;
 		

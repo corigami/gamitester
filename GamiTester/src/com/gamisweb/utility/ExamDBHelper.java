@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
  
 public class ExamDBHelper{
- 
+
     private static final String TAG = "ExamDBHelper";
     private static final String DATABASE_NAME = "exam_database";
     private static final int DATABASE_VERSION = 1;      //Database Version
@@ -28,20 +28,21 @@ public class ExamDBHelper{
      //Table Name
     public static final String EXAM_TABLE = "tb_Exams";
     public static final String EXAM_QUESTION_TABLE = "tb_Questions";
+    public static final String EXAM_Personal="tb_Personal";
  
     /**
      * Exam_Table columns
      */
-	public static final String KEY_TITLE = "Title"; //Also used 
- //   public String getTitle(){return KEY_TITLE;}
+	public static final String KEY_TITLE = "Title"; //Primary Key
+
     public static final String KEY_AUTHOR= "Author";
- //   public String getAuthor(){return KEY_AUTHOR;}
+
     public static final String KEY_EXAMROWID = "_id"; 
         
     /**
      * Question_Table columns
      */
-    //KEY_TITLE is used in the Question Table
+    //Key_Title used as table name
     public static final String KEY_QUESTIONROWID = "_id";
     public static final String KEY_EXAMQUESTION = "ExamQuestion";
     public static final String KEY_SECTION = "Section";
@@ -52,6 +53,12 @@ public class ExamDBHelper{
     public static final String KEY_CORRECTANSWER = "CorrectAnswer";
     public static final String KEY_WEIGHT = "Weight";
 
+    /**
+     * Personal table columns
+     */
+ //   public static final String KEY_
+    
+    
     /**
     *Database creation sql statement
     */

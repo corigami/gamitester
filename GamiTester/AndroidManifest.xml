@@ -27,10 +27,6 @@
             android:name="com.gamisweb.gamitester.ShowQuestionsActivity"
             android:label="@string/titleText" >
         </activity>
-        <activity
-            android:name="com.gamisweb.gamitester.ReviewMissedActivity"
-            android:label="@string/title_activity_review_missed" >
-        </activity>
     </application>
 
 </manifest>
