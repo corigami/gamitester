@@ -10,35 +10,35 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
- 
-public class ExamDBHelper{
+
+public class ExamDBHelper {
 
     private static final String TAG = "ExamDBHelper";
     private static final String DATABASE_NAME = "exam_database";
     private static final int DATABASE_VERSION = 1;      //Database Version
- 
-    
+
+
     /**
      * Context
      */
     private final Context mCtx;
- 
+
     private DatabaseHelper mDbHelper;
     private SQLiteDatabase mDb;
-     //Table Name
+    //Table Name
     public static final String EXAM_TABLE = "tb_Exams";
     public static final String EXAM_QUESTION_TABLE = "tb_Questions";
-    public static final String EXAM_Personal="tb_Personal";
- 
+    public static final String EXAM_Personal = "tb_Personal";
+
     /**
      * Exam_Table columns
      */
-	public static final String KEY_TITLE = "Title"; //Primary Key
+    public static final String KEY_TITLE = "Title"; //Primary Key
 
-    public static final String KEY_AUTHOR= "Author";
+    public static final String KEY_AUTHOR = "Author";
 
-    public static final String KEY_EXAMROWID = "_id"; 
-        
+    public static final String KEY_EXAMROWID = "_id";
+
     /**
      * Question_Table columns
      */
@@ -56,19 +56,19 @@ public class ExamDBHelper{
     /**
      * Personal table columns
      */
- //   public static final String KEY_
-    
-    
+    //   public static final String KEY_
+
+
     /**
-    *Database creation sql statement
-    */
-   private static final String CREATE_EXAM_TABLE = "CREATE TABLE IF NOT EXISTS " + EXAM_TABLE + " (" + KEY_EXAMROWID + " integer primary key autoincrement, "
-        + KEY_TITLE +" text not null, " + KEY_AUTHOR + " text not null);";
-    
+     * Database creation sql statement
+     */
+    private static final String CREATE_EXAM_TABLE = "CREATE TABLE IF NOT EXISTS " + EXAM_TABLE + " (" + KEY_EXAMROWID + " integer primary key autoincrement, "
+            + KEY_TITLE + " text not null, " + KEY_AUTHOR + " text not null);";
+
     private static final String CREATE_QUESTION_TABLE = "CREATE TABLE IF NOT EXISTS " + EXAM_QUESTION_TABLE + " (" + KEY_QUESTIONROWID + " integer primary key autoincrement, "
-         +KEY_SECTION +" text not null, " +KEY_EXAMQUESTION +" text not null, " + KEY_ANSWERA + " text not null, "+ KEY_ANSWERB +" text not null, "
-            		+ KEY_ANSWERC +" text not null, " + KEY_ANSWERD +" text not null, "+ KEY_CORRECTANSWER +" text not null, "+ KEY_WEIGHT +" text not null);";
-      
+            + KEY_SECTION + " text not null, " + KEY_EXAMQUESTION + " text not null, " + KEY_ANSWERA + " text not null, " + KEY_ANSWERB + " text not null, "
+            + KEY_ANSWERC + " text not null, " + KEY_ANSWERD + " text not null, " + KEY_CORRECTANSWER + " text not null, " + KEY_WEIGHT + " text not null);";
+
     /**
      * Inner private class. Database Helper class for creating and updating database.
      */
@@ -77,14 +77,16 @@ public class ExamDBHelper{
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
 
         }
+
         /**
          * onCreate method is called for the 1st time when database doesn't exists.
          */
         @Override
         public void onCreate(SQLiteDatabase mDb) {
-   //         mDb.execSQL(CREATE_QUESTION_TABLE);
-        mDb.execSQL(CREATE_EXAM_TABLE);
+            //         mDb.execSQL(CREATE_QUESTION_TABLE);
+            mDb.execSQL(CREATE_EXAM_TABLE);
         }
+
         /**
          * onUpgrade method is called when database version changes.
          */
@@ -93,9 +95,9 @@ public class ExamDBHelper{
             Log.w(TAG, "Upgrading database from version " + oldVersion + " to "
                     + newVersion);
         }
-      
+
     }
- 
+
     /**
      * Constructor - takes the context to allow the database to be
      * opened/created
@@ -105,9 +107,10 @@ public class ExamDBHelper{
     public ExamDBHelper(Context ctx) {
         this.mCtx = ctx;
     }
-    
+
     /**
      * This method is used for creating/opening connection
+     *
      * @return instance of DatabaseUtil
      * @throws SQLException
      */
@@ -118,18 +121,20 @@ public class ExamDBHelper{
         Log.d("Database stuff", "You opened the Database");
         return this;
     }
+
     /**
      * This method is used for closing the connection.
      */
     public void close() {
-    	
+
         mDbHelper.close();
         Log.d("Database stuff", "You closed the Database");
-     
+
     }
- 
+
     /**
      * This method is used to create/insert new record Exam record.
+     *
      * @param title
      * @param author
      * @return long
@@ -140,18 +145,20 @@ public class ExamDBHelper{
         initialValues.put(KEY_AUTHOR, author);
         return mDb.insert(EXAM_TABLE, null, initialValues);
     }
-    public void createNewExamTable(String examTitle){
+
+    public void createNewExamTable(String examTitle) {
         final String CREATE_NEWEXAM_TABLE = "CREATE TABLE IF NOT EXISTS " + examTitle + " (" + KEY_QUESTIONROWID + " integer primary key autoincrement, "
-               +KEY_SECTION +" text not null, " +KEY_EXAMQUESTION +" text not null, " + KEY_ANSWERA + " text not null, "+ KEY_ANSWERB +" text not null, "
-        		+ KEY_ANSWERC +" text not null, " + KEY_ANSWERD +" text not null, "+ KEY_CORRECTANSWER +" text not null, "+ KEY_WEIGHT +" text not null);";
+                + KEY_SECTION + " text not null, " + KEY_EXAMQUESTION + " text not null, " + KEY_ANSWERA + " text not null, " + KEY_ANSWERB + " text not null, "
+                + KEY_ANSWERC + " text not null, " + KEY_ANSWERD + " text not null, " + KEY_CORRECTANSWER + " text not null, " + KEY_WEIGHT + " text not null);";
         mDbHelper = new DatabaseHelper(mCtx);
         mDb = mDbHelper.getWritableDatabase();
         mDb.execSQL(CREATE_NEWEXAM_TABLE);
     }
-    
+
 
     /**
      * This method is used to create/insert new record Question record.
+     *
      * @param title
      * @param section
      * @param question
@@ -164,7 +171,7 @@ public class ExamDBHelper{
      */
     public long createQuestion(String title, String section, String question, String answer1, String answer2, String answer3, String answer4, String correctAnswer, String weight) {
         ContentValues initialValues = new ContentValues();
-      //  initialValues.put(KEY_TITLE, title);
+        //  initialValues.put(KEY_TITLE, title);
         initialValues.put(KEY_SECTION, section);
         initialValues.put(KEY_EXAMQUESTION, question);
         initialValues.put(KEY_ANSWERA, answer1);
@@ -175,77 +182,87 @@ public class ExamDBHelper{
         initialValues.put(KEY_WEIGHT, weight);
         return mDb.insert(title, null, initialValues);
     }
+
     /**
      * This method will delete Exam record.
+     *
      * @param rowId
      * @return boolean
      */
     public boolean deleteExam(long rowId) {
         return mDb.delete(EXAM_TABLE, KEY_EXAMROWID + "=" + rowId, null) > 0;
     }
+
     /**
      * This method will delete Question record.
+     *
      * @param rowId
      * @return boolean
      */
     public boolean deleteQuestion(long rowId) {
         return mDb.delete(EXAM_QUESTION_TABLE, KEY_QUESTIONROWID + "=" + rowId, null) > 0;
     }
- 
+
     /**
      * This method will return Cursor holding all the Exam records.
+     *
      * @return Cursor
      */
     public Cursor fetchAllExams() {
-        return mDb.query(EXAM_TABLE, new String[] {KEY_EXAMROWID, KEY_TITLE, 
+        return mDb.query(EXAM_TABLE, new String[]{KEY_EXAMROWID, KEY_TITLE,
                 KEY_AUTHOR}, null, null, null, null, null);
     }
-    
+
     /**
      * This method will return Cursor holding all the Exam records.
+     *
      * @return Cursor
      */
     public Cursor fetchAllQuestions(String examTitle) {
-       Cursor mCursor = mDb.query(examTitle, new String[] {KEY_QUESTIONROWID, KEY_SECTION, KEY_EXAMQUESTION, KEY_ANSWERA, KEY_ANSWERB, KEY_ANSWERC, KEY_ANSWERD, KEY_CORRECTANSWER,KEY_WEIGHT}, null, null, null, null, null); 
-       if (mCursor != null) {
-           mCursor.moveToFirst();
-       }
-    	return mCursor;
-  
-    
+        Cursor mCursor = mDb.query(examTitle, new String[]{KEY_QUESTIONROWID, KEY_SECTION, KEY_EXAMQUESTION, KEY_ANSWERA, KEY_ANSWERB, KEY_ANSWERC, KEY_ANSWERD, KEY_CORRECTANSWER, KEY_WEIGHT}, null, null, null, null, null);
+        if (mCursor != null) {
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+
+
     }
+
     /**
      * This method will return Cursor holding the Question records from a specific Exam.
+     *
      * @param id
      * @param examTitle
      * @return Cursor
      * @throws SQLException
      */
-  public Cursor fetchQuestions(String examTitle) throws SQLException {
-    	String [] FROM = {KEY_QUESTIONROWID, KEY_TITLE,KEY_SECTION, KEY_EXAMQUESTION, KEY_ANSWERA, KEY_ANSWERB, KEY_ANSWERC, KEY_ANSWERD, KEY_CORRECTANSWER,KEY_WEIGHT};
-    	String where = "Title=?";
-    	String[] whereArgs = new String[]{examTitle};
-    	
-     Cursor mCursor =  mDb.query(EXAM_QUESTION_TABLE, FROM, where, whereArgs, null, null, null);
-        
+    public Cursor fetchQuestions(String examTitle) throws SQLException {
+        String[] FROM = {KEY_QUESTIONROWID, KEY_TITLE, KEY_SECTION, KEY_EXAMQUESTION, KEY_ANSWERA, KEY_ANSWERB, KEY_ANSWERC, KEY_ANSWERD, KEY_CORRECTANSWER, KEY_WEIGHT};
+        String where = "Title=?";
+        String[] whereArgs = new String[]{examTitle};
+
+        Cursor mCursor = mDb.query(EXAM_QUESTION_TABLE, FROM, where, whereArgs, null, null, null);
+
         if (mCursor != null) {
             mCursor.moveToFirst();
         }
         return mCursor;
     }
+
     public void deleteLocalDatabase(String exams) {
-        mDb.delete(exams, "1",new String[] {});
-     //   mDb.delete(EXAM_TABLE, KEY_QUESTIONROWID + "=" + rowId, null) > 0;
-        mDb.delete(EXAM_TABLE, "Title=?", new String[] {exams});
+        mDb.delete(exams, "1", new String[]{});
+        //   mDb.delete(EXAM_TABLE, KEY_QUESTIONROWID + "=" + rowId, null) > 0;
+        mDb.delete(EXAM_TABLE, "Title=?", new String[]{exams});
         Log.d("Database stuff", "Database Exam table succesfully deleted");
-        mDb.delete("tb_Questions", "1",new String[] {});
+        mDb.delete("tb_Questions", "1", new String[]{});
         Log.d("Database stuff", "Database Question table succesfully deleted");
-        mDb.close();  
+        mDb.close();
     }
 
-    
+
     /**
      * This method will update Exam record.
+     *
      * @param id
      * @param author
      * @param title
@@ -257,8 +274,10 @@ public class ExamDBHelper{
         args.put(KEY_AUTHOR, author);
         return mDb.update(EXAM_TABLE, args, KEY_EXAMROWID + "=" + id, null) > 0;
     }
+
     /**
      * This method will update Question record.
+     *
      * @param id
      * @param title
      * @param question
@@ -269,7 +288,7 @@ public class ExamDBHelper{
      * @param correctAnswer
      * @return boolean
      */
-    public boolean updateQuestion(String title,int id, String section, String question, String answer1, String answer2, String answer3, String answer4, String correctAnswer) {
+    public boolean updateQuestion(String title, int id, String section, String question, String answer1, String answer2, String answer3, String answer4, String correctAnswer) {
         ContentValues args = new ContentValues();
         args.put(KEY_SECTION, section);
         args.put(KEY_EXAMQUESTION, question);
@@ -278,8 +297,14 @@ public class ExamDBHelper{
         args.put(KEY_ANSWERC, answer3);
         args.put(KEY_ANSWERD, answer4);
         args.put(KEY_CORRECTANSWER, correctAnswer);
-		
-        return mDb.update(title, args, KEY_EXAMROWID + "=" + id, null) > 0;
-    
+
+        return mDb.update(title, args, KEY_QUESTIONROWID + "=" + id, null) > 0;
+
+    }
+
+    public boolean updateQuestionWeight(String title, int id, String weight) {
+        ContentValues args = new ContentValues();
+        args.put(KEY_WEIGHT, weight);
+        return mDb.update(title, args, KEY_QUESTIONROWID + "=" + id, null) > 0;
     }
 }
