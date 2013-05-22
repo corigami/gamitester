@@ -168,7 +168,25 @@ public class ShowQuestionsActivity extends Activity {
         questionIndex++;
         if (questionIndex < questionArray.size())
             displayQuestions(questionArray.get(questionIndex));
-        else displayFinalReport();
+        else {
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            final EditText input = new EditText(this);
+            alert.setTitle("Done?");
+            alert.setMessage("You have reached the end of the exam.  Click okay to see how you did. ");
+            alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+                    displayFinalReport();
+                    // Do something with value!
+                }
+            });
+
+            alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+                    // Canceled.
+                }
+            });
+            alert.show();
+        }
     }
 
     public void prevButtonOnClick(View view) {

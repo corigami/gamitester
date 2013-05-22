@@ -2,6 +2,9 @@ package com.gamisweb.gamitester;
 
 import java.io.*;
 
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.os.AsyncTask;
 import com.gamisweb.gamitester.R;
 import com.gamisweb.utility.*;
 
@@ -32,11 +35,13 @@ public class MainActivity extends Activity {
     private String selectedExam = "";
     private SimpleCursorAdapter dataAdapter;
     private ExamDBHelper dbUtil;
+    private Context context;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        context = this;
 
     }
 
@@ -78,19 +83,82 @@ public class MainActivity extends Activity {
     public void setActivityMainLayout(View view) {
         consent = true;
         setContentView(R.layout.activity_main);
-        Button showQuestions = (Button) findViewById(R.id.button4);
+        Button showQuestions = (Button) findViewById(R.id.buttonShowQuestions);
         if (selectedExam == "") showQuestions.setVisibility(View.GONE);
         else showQuestions.setVisibility(View.VISIBLE);
     }
 
+    private void createDatabase() throws IOException {
+
+        AsyncTask<Void, Void, Void> task = new AsyncTask<Void, Void, Void>() {
+            private ProgressDialog pd;
+
+            @Override
+            protected void onPreExecute() {
+                pd = new ProgressDialog(context);
+                pd.setTitle("Generating Exam from embedded text file");
+                pd.setMessage("Please wait");
+                pd.setCancelable(false);
+                pd.setIndeterminate(true);
+                pd.show();
+            }
+
+            @Override
+            protected Void doInBackground(Void... arg0) {
+                try {
+                    dbUtil = new ExamDBHelper(context);
+                    AssetManager aM = context.getAssets();
+                    InputStream fileToRead = aM.open("set1.txt");
+                    InputStreamReader inputStreamReader = new InputStreamReader(fileToRead);
+                    BufferedReader buff = new BufferedReader(inputStreamReader);
+                    ArrayList<QInfo> questionArray = Io.getTextQuestions(buff);
+                    QInfo questionStore = new QInfo();
+                    dbUtil.open();
+                    int i;
+                    String examTitle = "examnum_" + count;
+                    dbUtil.createExam(examTitle, "Author# " + count);
+                    dbUtil.createNewExamTable(examTitle);
+                    for (i = 0; i < questionArray.size(); i++) {
+                        questionStore = questionArray.get(i);
+                        dbUtil.createQuestion(examTitle, questionStore.getSection(), questionStore.getText(), questionStore.getChoice(0), questionStore.getChoice(1), questionStore.getChoice(2),
+                                questionStore.getChoice(3), Integer.toString(questionStore.getCorrect()), Integer.toString(questionStore.getWeight()));
+                    }
+                    dbUtil.close();
+                    buff.close();
+                    inputStreamReader.close();
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    //TODO catch block
+                    e.printStackTrace();
+                } catch (IOException e2) {
+                    //TODO catch block
+                    e2.printStackTrace();
+                }
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(Void result) {
+                pd.dismiss();
+                findViewById(R.id.buttonAddExam).setEnabled(true);
+            }
+
+        };
+        task.execute((Void[]) null);
+        setHomeScreenLayout1("You added Exam #" + count + ", by Author #" + count + " to the database");
+        count++;
+
+
+    }
+
     public void reviewButtonOnClick(View view) {    //creates listener onClick to tell the program what to do when button1 is clicked.
+        findViewById(R.id.buttonAddExam).setEnabled(false);
         try {
             createDatabase();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
+            //TODO catch block
             e.printStackTrace();
         }
-
     }
 
 
@@ -117,32 +185,6 @@ public class MainActivity extends Activity {
         count = 0;
     }
 
-    private void createDatabase() throws IOException {
-        dbUtil = new ExamDBHelper(this);
-        AssetManager aM = this.getAssets();
-        InputStream fileToRead = aM.open("set1.txt");
-        InputStreamReader inputStreamReader = new InputStreamReader(fileToRead);
-        BufferedReader buff = new BufferedReader(inputStreamReader);
-        ArrayList<QInfo> questionArray = Io.getTextQuestions(buff);
-        QInfo questionStore = new QInfo();
-        dbUtil.open();
-        int i;
-        String examTitle = "examnum_" + count;
-        dbUtil.createExam(examTitle, "Author# " + count);
-        dbUtil.createNewExamTable(examTitle);
-        for (i = 0; i < questionArray.size(); i++) {
-            questionStore = questionArray.get(i);
-            dbUtil.createQuestion(examTitle, questionStore.getSection(), questionStore.getText(), questionStore.getChoice(0), questionStore.getChoice(1), questionStore.getChoice(2),
-                    questionStore.getChoice(3), Integer.toString(questionStore.getCorrect()), Integer.toString(questionStore.getWeight()));
-        }
-
-        dbUtil.close();
-        setHomeScreenLayout1("You added Exam #" + count + ", by Author #" + count + " to the database");
-        count++;
-        buff.close();
-        inputStreamReader.close();
-
-    }
 
     public void setHomeScreenLayout1() {
         homeScreenLayout1 = (TextView) findViewById(R.id.homeScreenTextView1);
