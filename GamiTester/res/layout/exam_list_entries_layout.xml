@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
- 	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
- 	android:orientation="vertical">
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
 
     <TextView
-        android:id="@+id/examAuthor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:text="@string/examAuthor" />
-        <TextView
-        android:id="@+id/examTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:text="@string/examTitle" />
- 
- 
+            android:id="@+id/examTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="top"
+            android:text="@string/examTitle" android:textSize="16dp"/>
+    <TextView
+            android:id="@+id/examAuthor"
+            android:layout_width="316dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right|top"
+            android:text="@string/examAuthor" android:layout_marginRight="45dp"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="@string/examDescript"
+            android:id="@+id/examDescription" android:layout_marginLeft="69dp"/>
+
+
 </LinearLayout>

@@ -33,11 +33,11 @@ public class ExamDBHelper {
     /**
      * Exam_Table columns
      */
-    public static final String KEY_TITLE = "Title"; //Primary Key
-
-    public static final String KEY_AUTHOR = "Author";
-
     public static final String KEY_EXAMROWID = "_id";
+    public static final String KEY_TITLE = "Title"; //Primary Key
+    public static final String KEY_AUTHOR = "Author";
+    public static final String KEY_DESC = "Description";
+
 
     /**
      * Question_Table columns
@@ -63,7 +63,7 @@ public class ExamDBHelper {
      * Database creation sql statement
      */
     private static final String CREATE_EXAM_TABLE = "CREATE TABLE IF NOT EXISTS " + EXAM_TABLE + " (" + KEY_EXAMROWID + " integer primary key autoincrement, "
-            + KEY_TITLE + " text not null, " + KEY_AUTHOR + " text not null);";
+            + KEY_TITLE + " text not null, " + KEY_AUTHOR + " text not null, " + KEY_DESC + " text not null);";
 
     private static final String CREATE_QUESTION_TABLE = "CREATE TABLE IF NOT EXISTS " + EXAM_QUESTION_TABLE + " (" + KEY_QUESTIONROWID + " integer primary key autoincrement, "
             + KEY_SECTION + " text not null, " + KEY_EXAMQUESTION + " text not null, " + KEY_ANSWERA + " text not null, " + KEY_ANSWERB + " text not null, "
@@ -137,12 +137,14 @@ public class ExamDBHelper {
      *
      * @param title
      * @param author
+     * @param descript
      * @return long
      */
-    public long createExam(String title, String author) {
+    public long createExam(String title, String author, String descript) {
         ContentValues initialValues = new ContentValues();
         initialValues.put(KEY_TITLE, title);
         initialValues.put(KEY_AUTHOR, author);
+        initialValues.put(KEY_DESC, descript);
         return mDb.insert(EXAM_TABLE, null, initialValues);
     }
 
@@ -210,7 +212,7 @@ public class ExamDBHelper {
      */
     public Cursor fetchAllExams() {
         return mDb.query(EXAM_TABLE, new String[]{KEY_EXAMROWID, KEY_TITLE,
-                KEY_AUTHOR}, null, null, null, null, null);
+                KEY_AUTHOR, KEY_DESC}, null, null, null, null, null);
     }
 
     /**
@@ -228,14 +230,7 @@ public class ExamDBHelper {
 
     }
 
-    /**
-     * This method will return Cursor holding the Question records from a specific Exam.
-     *
-     * @param id
-     * @param examTitle
-     * @return Cursor
-     * @throws SQLException
-     */
+
     public Cursor fetchQuestions(String examTitle) throws SQLException {
         String[] FROM = {KEY_QUESTIONROWID, KEY_TITLE, KEY_SECTION, KEY_EXAMQUESTION, KEY_ANSWERA, KEY_ANSWERB, KEY_ANSWERC, KEY_ANSWERD, KEY_CORRECTANSWER, KEY_WEIGHT};
         String where = "Title=?";
@@ -266,12 +261,14 @@ public class ExamDBHelper {
      * @param id
      * @param author
      * @param title
+     * @param descript
      * @return boolean
      */
-    public boolean updateExam(int id, String title, String author) {
+    public boolean updateExam(int id, String title, String author, String descript) {
         ContentValues args = new ContentValues();
         args.put(KEY_TITLE, title);
         args.put(KEY_AUTHOR, author);
+        args.put(KEY_DESC, descript);
         return mDb.update(EXAM_TABLE, args, KEY_EXAMROWID + "=" + id, null) > 0;
     }
 

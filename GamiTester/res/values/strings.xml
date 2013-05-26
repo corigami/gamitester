@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Splash Screen -->
+    <string name="splash">"Disclaimer:
+        This program was written for the sole purpose of assisting upgrade trainees study for their EOCs.
+        This software should not be the only source for EOC preparation. The author cannot be held accountable for any
+        failures of the trainee.
+        Any other use of this software is unauthorized and could result in UCMJ action.
+        Thanks!
+
+        -Gami"
+    </string>
+
+
     <!-- Main Activity Strings -->
     <string name="app_name">Gami Tester</string>
     <string name="titleText">Gami Tester</string>
+    <string name="homeScreenText1">This is the homescreen text, clicking Add exam will scan in the text file with the
+        name you specify below:
+    </string>
     <string name="home_screen_label">Home</string>
     <string name="newQuestion">Test</string>
     <string name="select_exam_act_label">Select an Exam</string>
@@ -15,8 +30,6 @@
     <string name="homeScreenExamButton">Select Exam</string>
     <string name="homeScreenEditButton">Delete Database</string>
     <string name="homeScreenQuestionButton">Show Questions</string>
-    <string name="examTitle">Exam Title Default</string>
-    <string name="examAuthor">Exam Author Default</string>
     <string name="questionQuestion">Question</string>
     <string name="questionAnswerA">A</string>
     <string name="questionAnswerB">B</string>
@@ -28,25 +41,19 @@
     <string name="buttonPrevious">Prev</string>
     <string name="edit_message">Enter the filename here</string>
     <string name="weight">Weight</string>
+
+    <!--Exam List Entries Layout Strings -->
+    <string name="examTitle">Exam Title Default</string>
+    <string name="examAuthor">Exam Author Default</string>
+    <string name="examDescript">Exam Default Description</string>
+
+
     <!-- Review Layout Strings -->
+
     <string name="results_Lable">Score =</string>
     <string name="results">100%</string>
     <string name="results_exam_name">Exam Name</string>
-
-
     <string name="title_activity_review_missed">ReviewMissedActivity</string>
-    <string name="homeScreenText1">This is the homescreen text, clicking Add exam will scan in the text file with the
-        name you specify below:
-    </string>
-    <string name="splash">"Disclaimer:
-        This program was written for the sole purpose of assisting upgrade trainees study for their EOCs.
-        This software should not be the only source for EOC preparation. The author cannot be held accountable for any
-        failures of the trainee.
-        Any other use of this software is unauthorized and could result in UCMJ action.
-        Thanks!
-
-        -Gami"
-    </string>
 
 
 </resources>
