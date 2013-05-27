@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
               android:id="@+id/activityMainLayout"
               android:orientation="vertical"
               android:layout_width="match_parent"
@@ -33,27 +32,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:text="@string/homeScreenReviewButton"
-                android:onClick="reviewButtonOnClick"/>
+                android:onClick="buttonAddExamOnClick"/>
 
         <Button
                 android:id="@+id/buttonSelectExam"
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="70dp"
                 android:text="@string/homeScreenExamButton"
-                android:onClick="examButtonOnClick"/>
+                android:onClick="buttonSelectExamOnClick"/>
+        <Button
+                android:id="@+id/buttonCopyToWeb"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="@string/copyToWebButton"
+                android:onClick="buttonCopyToWebOnClick"/>
 
+        <Button
+                android:id="@+id/buttonShowQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:onClick="buttonShowQuestionsOnClick"
+                android:text="@string/homeScreenQuestionButton"/>
         <Button
                 android:id="@+id/buttonDeleteDatabase"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:text="@string/homeScreenEditButton"
-                android:onClick="editButtonOnClick"/>
-        <Button
-                android:id="@+id/buttonShowQuestions"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:onClick="questionButtonOnClick"
-                android:text="@string/homeScreenQuestionButton"/>
+                android:onClick="buttonDeleteDatabaseOnClick"/>
 
     </LinearLayout>
 </LinearLayout>

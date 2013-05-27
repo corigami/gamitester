@@ -30,6 +30,7 @@
     <string name="homeScreenExamButton">Select Exam</string>
     <string name="homeScreenEditButton">Delete Database</string>
     <string name="homeScreenQuestionButton">Show Questions</string>
+    <string name="copyToWebButton">Copy To Web</string>
     <string name="questionQuestion">Question</string>
     <string name="questionAnswerA">A</string>
     <string name="questionAnswerB">B</string>

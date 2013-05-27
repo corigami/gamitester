@@ -9,6 +9,8 @@ import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import android.widget.AdapterView.OnItemClickListener;
@@ -25,6 +27,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import com.gamisweb.gamitester.WebDataAsyncTask;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -35,6 +38,7 @@ import java.util.ArrayList;
 public class MainActivity extends Activity {
 
     public final static String EXTRA_MESSAGE = "com.gamisweb.gamitester.MESSAGE";
+    ArrayList<ExamInfo> webExamData = new ArrayList<ExamInfo>();
     private boolean consent = false;
     private int count = 0;
     private TextView homeScreenLayout1;
@@ -48,8 +52,6 @@ public class MainActivity extends Activity {
     private CheckBox checkBoxWeb;
     private boolean webSelected;
     private ListView examListView;
-    ArrayList<ExamInfo> webExamData = new ArrayList<ExamInfo>();
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -71,13 +73,12 @@ public class MainActivity extends Activity {
         else setContentView(R.layout.activity_main);
     }
 
-	/*	@Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-	 */
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
 
     @Override
     protected void onStop() {
@@ -98,6 +99,7 @@ public class MainActivity extends Activity {
         Button showQuestions = (Button) findViewById(R.id.buttonShowQuestions);
         if (selectedExam == "") showQuestions.setVisibility(View.GONE);
         else showQuestions.setVisibility(View.VISIBLE);
+
     }
 
     private void createDatabase() throws IOException {
@@ -163,7 +165,7 @@ public class MainActivity extends Activity {
 
     }
 
-    public void reviewButtonOnClick(View view) {    //creates listener onClick to tell the program what to do when button1 is clicked.
+    public void buttonAddExamOnClick(View view) {    //creates listener onClick to tell the program what to do when button1 is clicked.
         findViewById(R.id.buttonAddExam).setEnabled(false);
         try {
             createDatabase();
@@ -173,36 +175,27 @@ public class MainActivity extends Activity {
         }
     }
 
-/*    public void addListenerOnCheckBoxWeb() {
-        checkBoxWeb = (CheckBox) findViewById(R.id.checkboxWeb);
-        checkBoxWeb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                webSelected = ((CheckBox) view).isChecked();
-
-            }
-        });
-        System.out.println("webselected = " + webSelected);
-    }*/
-
     public void webCheckBoxOnClick(View view) {
         webSelected = findViewById(R.id.checkboxWeb).isSelected();
         if (webSelected) webSelected = false;
         else if (!webSelected) webSelected = true;
-        System.out.println("webselected = " + webSelected);
     }
 
-    public void examButtonOnClick(View view) {    //creates listener onClick to tell the program what to do when button1 is clicked.
+    public void buttonSelectExamOnClick(View view) {    //creates listener onClick to tell the program what to do when button1 is clicked.
         showExamList();
     }
 
-    public void questionButtonOnClick(View view) {
+    public void buttonCopyToWebOnClick(View view) {
+
+    }
+
+    public void buttonShowQuestionsOnClick(View view) {
         Intent intent = new Intent(this, ShowQuestionsActivity.class);
         intent.putExtra(EXTRA_MESSAGE, selectedExam);
         startActivity(intent);
     }
 
-    public void editButtonOnClick(View view) {
+    public void buttonDeleteDatabaseOnClick(View view) {
         deleteDatabase();
     }
 
@@ -214,14 +207,6 @@ public class MainActivity extends Activity {
         count = 0;
     }
 
-    /*
-        public void setHomeScreenLayout1() {
-            homeScreenLayout1 = (TextView) findViewById(R.id.homeScreenTextView1);
-            homeScreenLayout1.setText(this.getHomeScreenText());
-            homeScreenLayout1.postInvalidate();
-
-        }
-    */
     public void setHomeScreenLayout1(String displayText) {
         homeScreenLayout1 = (TextView) findViewById(R.id.homeScreenTextView1);
         homeScreenLayout1.setText(displayText);
@@ -258,7 +243,10 @@ public class MainActivity extends Activity {
         examListView = (ListView) findViewById(R.id.exam_listview); // create the adapter using the cursor pointing to the desired data as well as the layout information
 
         if (webSelected) {
-            new GetWebExamData().execute();
+            WebDataAsyncTask test = new WebDataAsyncTask(this, examListView);
+            webExamData = test.getExamData();
+            //  new GetWebExamData().execute();
+
         } else if (!webSelected) {
             ExamDBHelper examHelper = new ExamDBHelper(this);
             examHelper.open();
@@ -306,7 +294,27 @@ public class MainActivity extends Activity {
         });
     }
 
-    private class GetWebExamData extends AsyncTask<Void, Void, ArrayList<ExamInfo>> {
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.optionsDeleteDatabase:
+                deleteDatabase();
+                return true;
+            case R.id.optionsAddExam:
+                try {
+                    createDatabase();
+                    return true;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            case R.id.optionsCopyToWeb:
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    /*private class GetWebExamData extends AsyncTask<Void, Void, ArrayList<ExamInfo>> {
         protected void onPreExecute() {
             //TODO preExecute Code
         }
@@ -371,9 +379,9 @@ public class MainActivity extends Activity {
                     tempExamInfo.setExamDescript(json_data.getString("Description"));
                     System.out.println("Description from JSON = " + tempExamInfo.getExamDescript());
                     webExamData.add(tempExamInfo);
-                   /* for(int x=0;x<temp.size();x++){
+                   *//* for(int x=0;x<temp.size();x++){
                         System.out.println("Title at position "+x+" = "+temp.get(x).getExamTitle());
-                    }*/
+                    }*//*
                 }
 
             } catch (Exception e2) {
@@ -394,5 +402,5 @@ public class MainActivity extends Activity {
             examListView.setAdapter(examInfoAdapter);
 
         }
-    }
+    }*/
 }

@@ -1,9 +1,5 @@
 package com.gamisweb.gamitester;
 
-import java.util.ArrayList;
-
-import com.gamisweb.utility.*;
-import com.gamisweb.gamitester.QInfoAdapter;
 import android.R.color;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -11,13 +7,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.NumberPicker;
-import android.widget.SimpleCursorAdapter;
-import android.widget.TextView;
+import android.widget.*;
+import com.gamisweb.utility.ExamDBHelper;
+import com.gamisweb.utility.Io;
+import com.gamisweb.utility.QInfo;
+
+import java.util.ArrayList;
 
 
 public class ShowQuestionsActivity extends Activity {
