@@ -282,12 +282,22 @@ public class MainActivity extends Activity {
             examHelper.close();
         }
 
-        examListView.setOnItemClickListener(new OnItemClickListener() {
+             examListView.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> listView, View view, int position, long id) {
+                if(!webSelected){
                 Cursor cursor = (Cursor) listView.getItemAtPosition(position); // Get the cursor, positioned to the corresponding row in the result set
+                System.out.println("You chose item #:"+position+1);
                 selectedExam = cursor.getString(cursor.getColumnIndexOrThrow("Title")); // Get the selected exam from this row in the database.
+                }
+                else if(webSelected){
+                selectedExam = ((ExamInfo)listView.getItemAtPosition(position)).getExamTitle();
+
+                    }
+
                 setContentView(R.layout.activity_main);
+                setHomeScreenText("Selected Exam: "+selectedExam);
+                setHomeScreenLayout1("Selected Exam: "+selectedExam);
 
             }
 
@@ -314,93 +324,4 @@ public class MainActivity extends Activity {
         }
     }
 
-    /*private class GetWebExamData extends AsyncTask<Void, Void, ArrayList<ExamInfo>> {
-        protected void onPreExecute() {
-            //TODO preExecute Code
-        }
-
-        protected ArrayList<ExamInfo> doInBackground(Void... params) {
-            JSONArray jArray;
-            String result = "";
-            String newResult = "";
-            InputStream is = null;
-            StringBuilder sb = null;
-            ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
-            ArrayList<ExamInfo> temp = new ArrayList<ExamInfo>();
-            //http post
-            try {
-                try {
-                    HttpClient httpclient = new DefaultHttpClient();
-                    HttpPost httppost = new HttpPost("http://www.gamisweb.com/gamitester/index.php");
-                    httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-                    HttpResponse response = httpclient.execute(httppost);
-                    HttpEntity entity = response.getEntity();
-                    is = entity.getContent();
-                } catch (Exception e) {
-                    Log.e("log_tag", "Error in http connection" + e.toString());
-                }
-
-                try { //convert response to string
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(is, "iso-8859-1"), 8);
-                    sb = new StringBuilder();
-                    sb.append(reader.readLine() + "\n");
-
-                    String line = "0";
-                    int counter = 1;
-
-                    while ((line = reader.readLine()) != null) {
-                        if (counter == 7) sb.append(line);
-                        counter++;
-                    }
-                    is.close();
-                    result = sb.toString();
-                    newResult = result.replaceAll("\\<.*?\\>", "");
-                } catch (Exception e) {
-                    Log.e("log_tag", "Error converting result " + e.toString());
-                }
-                String ct_id;//paring data
-                String ct_title;
-                String ct_author;
-                String ct_descript;
-
-                jArray = new JSONArray(newResult);
-                JSONObject json_data;
-
-
-                for (int i = 0; i < jArray.length(); i++) {
-                    ExamInfo tempExamInfo = new ExamInfo();
-                    json_data = jArray.getJSONObject(i);
-                    tempExamInfo.setExamDatabaseID(json_data.getString("_id"));
-                    System.out.println("Id from JSON = " + tempExamInfo.getExamDatabaseID());
-                    tempExamInfo.setExamTitle(json_data.getString("Title"));
-                    System.out.println("Title from JSON = " + tempExamInfo.getExamTitle());
-                    tempExamInfo.setExamAuthor(json_data.getString("Author"));
-                    System.out.println("Author from JSON = " + tempExamInfo.getExamAuthor());
-                    tempExamInfo.setExamDescript(json_data.getString("Description"));
-                    System.out.println("Description from JSON = " + tempExamInfo.getExamDescript());
-                    webExamData.add(tempExamInfo);
-                   *//* for(int x=0;x<temp.size();x++){
-                        System.out.println("Title at position "+x+" = "+temp.get(x).getExamTitle());
-                    }*//*
-                }
-
-            } catch (Exception e2) {
-                //TODO catch block
-                e2.printStackTrace();
-            }
-
-            return webExamData;
-
-        }
-
-        @Override
-        protected void onPostExecute(ArrayList<ExamInfo> examInfo) {
-            System.out.println("webExamData.size() = " + webExamData.size());
-            System.out.println("First title = " + webExamData.get(0).getExamTitle());
-            System.out.println("Second title = " + webExamData.get(1).getExamTitle());
-            examInfoAdapter = new ExamInfoAdapter(context, R.layout.exam_list_entries_layout, webExamData);
-            examListView.setAdapter(examInfoAdapter);
-
-        }
-    }*/
 }

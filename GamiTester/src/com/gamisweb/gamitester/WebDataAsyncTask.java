@@ -49,7 +49,6 @@ public class WebDataAsyncTask extends AsyncTask<ArrayList<ExamInfo>, Void, Array
     }
 
     public ArrayList<ExamInfo> getExamData() {
-        System.out.println("You got to getExamData");
         this.execute(gamiswebExamList);
         return gamiswebExamList;
 
@@ -57,7 +56,7 @@ public class WebDataAsyncTask extends AsyncTask<ArrayList<ExamInfo>, Void, Array
 
     protected void onPreExecute() {
         pd = new ProgressDialog(context);
-        pd.setTitle("Getting List of Exams from Gamisweb");
+        pd.setTitle("Getting Info from Gamisweb");
         pd.setMessage("Please wait");
         pd.setCancelable(false);
         pd.setIndeterminate(true);
