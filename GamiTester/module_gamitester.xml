@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_gamitester" default="compile.module.gamitester">
+  <dirname property="module.gamitester.basedir" file="${ant.file.module_gamitester}"/>
+  
+  <property name="module.jdk.home.gamitester" value="${jdk.home.android_4.2.2}"/>
+  <property name="module.jdk.bin.gamitester" value="${jdk.bin.android_4.2.2}"/>
+  <property name="module.jdk.classpath.gamitester" value="jdk.classpath.android_4.2.2"/>
+  
+  <property name="compiler.args.gamitester" value="${compiler.args}"/>
+  
+  <property name="gamitester.output.dir" value="${module.gamitester.basedir}/out/production/GamiTester"/>
+  <property name="gamitester.testoutput.dir" value="${module.gamitester.basedir}/out/test/GamiTester"/>
+  
+  <path id="gamitester.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="gamitester.module.production.classpath">
+    <path refid="${module.jdk.classpath.gamitester}"/>
+    <path refid="library.httpclient-4.2.5.classpath"/>
+    <path refid="library.httpclient-4.2.5_(2).classpath"/>
+    <path refid="library.httpcore-4.2.4.classpath"/>
+  </path>
+  
+  <path id="gamitester.runtime.production.module.classpath">
+    <pathelement location="${gamitester.output.dir}"/>
+    <path refid="library.httpclient-4.2.5.classpath"/>
+    <path refid="library.httpclient-4.2.5_(2).classpath"/>
+    <path refid="library.httpcore-4.2.4.classpath"/>
+  </path>
+  
+  <path id="gamitester.module.classpath">
+    <path refid="${module.jdk.classpath.gamitester}"/>
+    <pathelement location="${gamitester.output.dir}"/>
+    <path refid="library.httpclient-4.2.5.classpath"/>
+    <path refid="library.httpclient-4.2.5_(2).classpath"/>
+    <path refid="library.httpcore-4.2.4.classpath"/>
+  </path>
+  
+  <path id="gamitester.runtime.module.classpath">
+    <pathelement location="${gamitester.testoutput.dir}"/>
+    <pathelement location="${gamitester.output.dir}"/>
+    <path refid="library.httpclient-4.2.5.classpath"/>
+    <path refid="library.httpclient-4.2.5_(2).classpath"/>
+    <path refid="library.httpcore-4.2.4.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.gamitester">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.gamitester">
+    <patternset refid="excluded.from.module.gamitester"/>
+  </patternset>
+  
+  <path id="gamitester.module.sourcepath">
+    <dirset dir="${module.gamitester.basedir}">
+      <include name="gen"/>
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.gamitester" depends="compile.module.gamitester.production,compile.module.gamitester.tests" description="Compile module GamiTester"/>
+  
+  <target name="compile.module.gamitester.production" depends="register.custom.compilers" description="Compile module GamiTester; production classes">
+    <mkdir dir="${gamitester.output.dir}"/>
+    <javac2 destdir="${gamitester.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.gamitester}/javac">
+      <compilerarg line="${compiler.args.gamitester}"/>
+      <bootclasspath refid="gamitester.module.bootclasspath"/>
+      <classpath refid="gamitester.module.production.classpath"/>
+      <src refid="gamitester.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.gamitester"/>
+    </javac2>
+    
+    <copy todir="${gamitester.output.dir}">
+      <fileset dir="${module.gamitester.basedir}/gen">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gamitester.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.gamitester.tests" depends="register.custom.compilers,compile.module.gamitester.production" description="compile module GamiTester; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.gamitester" description="cleanup module">
+    <delete dir="${gamitester.output.dir}"/>
+    <delete dir="${gamitester.testoutput.dir}"/>
+  </target>
+</project>
