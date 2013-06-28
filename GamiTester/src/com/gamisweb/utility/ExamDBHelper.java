@@ -1,8 +1,5 @@
 package com.gamisweb.utility;
 
-//import java.io.File;
-//import java.util.ArrayList;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

@@ -8,17 +8,31 @@ import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.*;
+import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import com.gamisweb.utility.ExamDBHelper;
 import com.gamisweb.utility.ExamInfo;
 import com.gamisweb.utility.Io;
 import com.gamisweb.utility.QInfo;
-import org.apache.http.HttpEntity;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+//import android.util.Log;
+/*import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -27,13 +41,9 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import com.gamisweb.gamitester.WebDataAsyncTask;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
+import com.gamisweb.gamitester.WebDataAsyncTask;
+*/
 
 public class MainActivity extends Activity {
 
@@ -110,11 +120,12 @@ public class MainActivity extends Activity {
             @Override
             protected void onPreExecute() {
                 pd = new ProgressDialog(context);
-                pd.setTitle("Generating Exam from embedded text file");
+                pd.setTitle("Generating test data from embedded text file");
                 pd.setMessage("Please wait");
                 pd.setCancelable(false);
                 pd.setIndeterminate(true);
                 pd.show();
+
             }
 
             @Override
@@ -182,7 +193,9 @@ public class MainActivity extends Activity {
     }
 
     public void buttonSelectExamOnClick(View view) {    //creates listener onClick to tell the program what to do when button1 is clicked.
-        showExamList();
+        if (getDatabaseSize() > 0)
+            showExamList();
+        else setHomeScreenLayout1("You must add a database first");
     }
 
     public void buttonCopyToWebOnClick(View view) {
@@ -204,7 +217,7 @@ public class MainActivity extends Activity {
         examHelper.open();
         examHelper.deleteLocalDatabase(selectedExam);
         examHelper.close();
-        count = 0;
+        count = getDatabaseSize() + 1;
     }
 
     public void setHomeScreenLayout1(String displayText) {
@@ -213,12 +226,12 @@ public class MainActivity extends Activity {
         homeScreenLayout1.postInvalidate();
     }
 
-    public String getHomeScreenText() {
-        return homeScreenText;
-    }
-
     public void setHomeScreenText(String string) {
         homeScreenText = string;
+    }
+
+    public String getHomeScreenText() {
+        return homeScreenText;
     }
 
     @Override
@@ -238,6 +251,15 @@ public class MainActivity extends Activity {
         }
     }
 
+    private int getDatabaseSize() {
+        ExamDBHelper examHelper = new ExamDBHelper(this);
+        examHelper.open();
+        Cursor cursor = examHelper.fetchAllExams();
+        int size = cursor.getCount();
+        examHelper.close();
+        return size;
+    }
+
     private void showExamList() {
         setContentView(R.layout.exam_listview_layout);
         examListView = (ListView) findViewById(R.id.exam_listview); // create the adapter using the cursor pointing to the desired data as well as the layout information
@@ -249,8 +271,6 @@ public class MainActivity extends Activity {
 
         } else if (!webSelected) {
             ExamDBHelper examHelper = new ExamDBHelper(this);
-            examHelper.open();
-            examHelper.close();
             examHelper.open();
             Cursor cursor = examHelper.fetchAllExams();
 
@@ -296,9 +316,7 @@ public class MainActivity extends Activity {
                     }
 
                 setContentView(R.layout.activity_main);
-                setHomeScreenText("Selected Exam: "+selectedExam);
                 setHomeScreenLayout1("Selected Exam: "+selectedExam);
-
             }
 
         });
